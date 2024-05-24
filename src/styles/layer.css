@@ -1,0 +1,69 @@
+body {width: 100%; height: 100vh; font-size: 18px;  font-family: 'Pretendard', '맑은 고딕','돋움', 'Koulen', -apple-system, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo';}
+#root {width: 100%; height: 100%;}
+
+
+.App {
+  width: 100%; height: 100%;
+  background-color: var(--mode);
+}
+
+
+
+
+
+/* ====================================
+ HEADER
+==================================== */
+.header {width: 100%; height: 80px; background-color: var(--mode); }
+
+.btn_menu_group {}
+
+
+.dynamic_island {}
+
+
+.btn_mode {
+  width: 50px; height: 50px; 
+  background-color: var(--mode); 
+  background-repeat: no-repeat; 
+  background-size: contain; 
+  background-position: center center; 
+  -webkit-mask-image: url("/src/assets/images/icon/sun.svg"); 
+  mask-image: url("/src/assets/images/icon/sun.svg"); -webkit-mask-repeat: no-repeat; 
+  mask-repeat: no-repeat; 
+  -webkit-mask-position: center center; 
+  mask-position: center center; 
+  -webkit-mask-size: contain; 
+  mask-size: contain;
+}
+
+
+
+
+/* ====================================
+ NAV
+==================================== */
+/* skip nav */
+.skipNav > a {position: absolute; left: -9999px; z-index: 9999; width: 100%; line-height: 50px; text-align: center; color: var(--black); background-color: #ececec;
+}
+.skipNav > a:focus {left: 0;}
+
+
+/* gnb */
+.nav.active {display: block;}
+.nav {display: none; position: fixed; top: 0; left: 0; z-index: 100; width: 100%; height: calc(100% - 80px); background-color: var(--mode); }
+.gnb_category {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+.gnb_category li + li {margin-top: 3.888em}
+.gnb_category li a {position: relative; display: inline-block; padding-right: 60px; background-repeat: no-repeat; background-size: auto 100%; background-position: right center; color: var(--complementary); font-family: 'Lacquer'; font-size: 2.777rem; }
+.gnb_category li.category_intro a {background-image: url("/src/assets/images/icon/hand.png");}
+.gnb_category li.category_self a {background-image: url("/src/assets/images/memoji/my.svg");}
+.gnb_category li.category_skill a  {background-image: url("/src/assets/images/icon/skill.png");}
+.gnb_category li.category_game a {background-image: url("/src/assets/images/icon/balance.png");}
+
+.gnb_category li:hover a:before {content:''; position: absolute; bottom: 0; left: 0; width: calc(100% - 60px); height: 25px; opacity: 0.5;}
+
+.gnb_category .category_intro a:before {background-color: var(--purple);}
+.gnb_category .category_self a:before {background-color: var(--pink);}
+.gnb_category .category_skill a:before {background-color: var(--blue);}
+.gnb_category .category_game a:before {background-color: var(--green);}

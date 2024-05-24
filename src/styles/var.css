@@ -1,0 +1,24 @@
+:root {
+  --black : #101010;
+  --White : #FFFFFF;
+
+  --green :#72DE2F;
+  --blue: #2AA9F5;
+  --purple: #9D50F5;
+  --pink : #FF3BA1;
+
+  --light-mimt-base: #D8F0EF; --light-mimt-dominant: #A7D3D2; --light-brown-accent: #997B6A;
+
+  --url : '/src/assets/images/'
+}
+
+
+.mode-Dark {
+  --mode: var(--black);
+  --complementary: var(--White);
+}
+
+.mode-White {
+  --mode: var(--White);
+  --complementary: var(--black);
+}
