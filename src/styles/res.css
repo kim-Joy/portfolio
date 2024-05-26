@@ -1,0 +1,23 @@
+@container res-container (max-width: 700px) {
+  .name_tag_group {
+    width: 90%;
+  }
+}
+
+@container res-container (max-width: 689px) {
+  .header {background-color: orange;}
+  .name_tag_group {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 689px){
+  body {font-size: 14px;}
+}
+
+@media (max-width: 430px){
+  body {font-size: 12px;}
+}
