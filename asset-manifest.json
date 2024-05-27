@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.89708b3d.css",
-    "main.js": "/portfolio/static/js/main.83838394.js",
+    "main.css": "/portfolio/static/css/main.e1e64acf.css",
+    "main.js": "/portfolio/static/js/main.77b1aeaa.js",
     "static/media/Pretendard-Thin.ttf": "/portfolio/static/media/Pretendard-Thin.23965237737042c7c087.ttf",
     "static/media/Pretendard-ExtraLight.ttf": "/portfolio/static/media/Pretendard-ExtraLight.3a1f8545bfb6498f1f14.ttf",
     "static/media/Pretendard-Light.ttf": "/portfolio/static/media/Pretendard-Light.be916151766e60d80835.ttf",
@@ -34,30 +34,41 @@
     "static/media/LOTTERIACHAB.woff2": "/portfolio/static/media/LOTTERIACHAB.2a9db743422ee5d966d6.woff2",
     "static/media/Lacquer-Regular.ttf": "/portfolio/static/media/Lacquer-Regular.8c2474231c86ae3d4663.ttf",
     "static/media/Lacquer-Regular.woff": "/portfolio/static/media/Lacquer-Regular.9d5a2c92fa181758afcf.woff",
+    "static/media/computer.svg": "/portfolio/static/media/computer.149f431239599db55cdfd807f2fa62b6.svg",
     "static/media/my.svg": "/portfolio/static/media/my.5019212114bb52501758.svg",
-    "static/media/fighting.svg": "/portfolio/static/media/fighting.dcb128c7ae39f5a5482e.svg",
+    "static/media/fighting.svg": "/portfolio/static/media/fighting.ee5680398194bc1a60dabd2eaf0878c6.svg",
     "static/media/Lacquer-Regular.woff2": "/portfolio/static/media/Lacquer-Regular.f33be84238bdb4e594b4.woff2",
     "static/media/face_heart.svg": "/portfolio/static/media/face_heart.a25c66f74c2ba5bdaf8e.svg",
     "static/media/Koulen-Regular.ttf": "/portfolio/static/media/Koulen-Regular.e23002c698c2632e9437.ttf",
     "static/media/fishbone_eye.png": "/portfolio/static/media/fishbone_eye.f5c8fedff1b7fb885f3b.png",
     "static/media/Koulen-Regular.woff": "/portfolio/static/media/Koulen-Regular.0ca6aff31c3c4750c075.woff",
     "static/media/Koulen-Regular.woff2": "/portfolio/static/media/Koulen-Regular.d0e35d1e627821441cf8.woff2",
-    "static/media/weclome_sign.svg": "/portfolio/static/media/weclome_sign.e006a6a530e937d2b54bc2c7d6b6a73d.svg",
+    "static/media/weclome_sign.svg": "/portfolio/static/media/weclome_sign.e006a6a530e937d2b54b.svg",
     "static/media/portfolio.png": "/portfolio/static/media/portfolio.490eed6bc45cda651dad.png",
     "static/media/nametag.svg": "/portfolio/static/media/nametag.cc05fb3024f4d0c2a969.svg",
+    "static/media/fishbone.svg": "/portfolio/static/media/fishbone.f91c27d95249feafb8f5.svg",
     "static/media/start_line.svg": "/portfolio/static/media/start_line.4bfb44712fce1c61cd51.svg",
+    "static/media/skill_react.svg": "/portfolio/static/media/skill_react.17b5e3d48be318686105.svg",
     "static/media/oval.svg": "/portfolio/static/media/oval.623adb54f3e35fe9211a.svg",
     "static/media/start.svg": "/portfolio/static/media/start.78cc088da6f3835026e5.svg",
+    "static/media/skill_ps.svg": "/portfolio/static/media/skill_ps.2fed373e4f549934acc5.svg",
+    "static/media/skill_github.svg": "/portfolio/static/media/skill_github.72c74497714eec6b97c1.svg",
     "static/media/sun.svg": "/portfolio/static/media/sun.5c8c9c71e5a9e00aeb81.svg",
+    "static/media/skill_figma.svg": "/portfolio/static/media/skill_figma.6d9dc6330f0cb8abb662.svg",
     "index.html": "/portfolio/index.html",
     "static/media/gradation_line.svg": "/portfolio/static/media/gradation_line.99ead4c3000a6026a694.svg",
+    "static/media/skill_ai.svg": "/portfolio/static/media/skill_ai.4746dcccd2b1d21c2376.svg",
     "static/media/blasting.svg": "/portfolio/static/media/blasting.2580b289a629102bca97.svg",
     "static/media/start_small.svg": "/portfolio/static/media/start_small.a684ed33d8178cfb11fb.svg",
-    "main.89708b3d.css.map": "/portfolio/static/css/main.89708b3d.css.map",
-    "main.83838394.js.map": "/portfolio/static/js/main.83838394.js.map"
+    "static/media/skill_js.svg": "/portfolio/static/media/skill_js.5727b14ca9ae2340d9be.svg",
+    "static/media/skill_css.svg": "/portfolio/static/media/skill_css.25b6606f71187d34ee20.svg",
+    "static/media/skill_html.svg": "/portfolio/static/media/skill_html.a45fc65b2667def83742.svg",
+    "static/media/bubble_tail.svg": "/portfolio/static/media/bubble_tail.6e15617445216c1cca89.svg",
+    "main.e1e64acf.css.map": "/portfolio/static/css/main.e1e64acf.css.map",
+    "main.77b1aeaa.js.map": "/portfolio/static/js/main.77b1aeaa.js.map"
   },
   "entrypoints": [
-    "static/css/main.89708b3d.css",
-    "static/js/main.83838394.js"
+    "static/css/main.e1e64acf.css",
+    "static/js/main.77b1aeaa.js"
   ]
 }
