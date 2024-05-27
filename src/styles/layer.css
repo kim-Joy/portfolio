@@ -1,5 +1,5 @@
-body {
-  width: 100%; height: 100vh;
+html,body {
+  width: 100%; height: 100%;
   container-name: res-container; container-type: inline-size;
   font-size: 18px;  
   font-family: 'Pretendard', '맑은 고딕','돋움', 'Koulen', -apple-system, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo';}
@@ -10,10 +10,30 @@ body {
   width: 100%; height: 100%;
   background-color: var(--mode);
 }
-.App > div {width:100%; height: 100%; }
 
+.pos_center {
+  position: absolute; 
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.test_box {
+  overflow: auto;
+  scroll-snap-type: x mandatory
+}
 
+.test {
+  width: 400%; height: calc(100vh - 80px); 
+  display: flex; flex-wrap: nowrap;
+}
+.test > div {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 80px);
+  scroll-snap-align: start;
+  scroll-snap-stop: normal
+}
+.test:after {content: ''; clear: both; display: block; visibility: hidden;}
 
 
 /* ====================================
@@ -56,7 +76,7 @@ body {
 
 /* gnb */
 .nav.active {display: block;}
-.nav {display: none; position: fixed; top: 0; left: 0; z-index: 100; width: 100%; height: calc(100% - 80px); background-color: var(--mode); }
+.nav {display: none; position: fixed; top: 0; left: 0; z-index: 100; width: 100%; height: 100%; background-color: var(--mode); }
 .gnb_category {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
 .gnb_category li + li {margin-top: 3.888em}

@@ -1,10 +1,4 @@
-import gsap from 'gsap';
-import Header from "components/Header"
-import Image from 'assets/images/pages/weclome_sign.svg';
-
-
-
-import "styles/intro.css";
+import 'styles/intro.css';
 
 const { Component } = require("react");
 
@@ -17,7 +11,6 @@ class Intro extends Component {
 
     return (
       <div className="intro">
-        <Header />
         <div className="name_tag_group" >
           <div className="name_info_tag" >
             <div className="info">

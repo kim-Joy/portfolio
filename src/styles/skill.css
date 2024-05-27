@@ -1,0 +1,118 @@
+
+.skill {}
+.skill:after {content:''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('/src/assets/images/common/fishbone.svg'); background-position: center; background-size: 70%; background-repeat: no-repeat; filter: blur(4px); }
+
+.skill .pos_center {
+  z-index: 1;
+  display: grid; 
+  grid-template-columns: 80px auto 80px;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  justify-items: stretch;
+  gap: 0 20px;
+  transition: 1s;
+}
+
+.skill_item_group {
+  display: flex; 
+  gap: 15px 0;
+  flex-direction: column;
+  flex-wrap: wrap; 
+}
+
+.skill_item {
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap; 
+  align-items: center;
+  align-content: center;
+  gap: 4px 0; 
+}
+.skill_item > span {font-weight: 700; text-align: center; word-break: keep-all; line-height: 0.777em;
+  font-size: 1.125rem; color: var(--complementary);}
+
+.skill_item .skill_icon {
+  display: block; 
+  max-width: 80px; max-height: 80px;
+  width: 100%; height: 100%;
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  aspect-ratio: 1/1; 
+  background-repeat: no-repeat; 
+  background-size: 60%;
+  background-position: center center; 
+}
+
+/* skill_icon */
+.skill_icon.skill_icon_html {
+  background-color: #F46938; 
+  background-image: url('/src/assets/images/icon/skill_html.svg');
+}
+.skill_icon.skill_icon_css {
+  background-color: #16A1DC;
+  background-image: url('/src/assets/images/icon/skill_css.svg')
+}
+.skill_icon.skill_icon_js {
+  background-color: #FFDE24;
+  background-image: url('/src/assets/images/icon/skill_js.svg')
+}
+.skill_icon.skill_icon_react {
+  background-color: #7DDFFF;
+  background-size: 70%;
+  background-image: url('/src/assets/images/icon/skill_react.svg')
+}
+.skill_icon.skill_icon_figma {
+  background-color: var(--complementary);
+  background-image: url("/src/assets/images/icon/skill_figma.svg"); 
+}
+.skill_icon.skill_icon_ai {
+  background-color: #F58C00;
+  background-image: url('/src/assets/images/icon/skill_ai.svg')
+}
+.skill_icon.skill_icon_ps {
+  background-color: #2B9ADD;
+  background-position: left 20px center;
+  background-image: url('/src/assets/images/icon/skill_ps.svg')
+}
+.skill_icon.skill_icon_github {
+  background-color: var(--complementary);
+  background-position: left 15px bottom;
+  background-size: 70%;
+  background-image: url("/src/assets/images/icon/skill_github.svg"); 
+}
+
+.skill_memoji {position: relative; }
+.skill_memoji .bubble {
+  display: block; 
+  position: absolute;
+  top: -100px; left: 0;
+  width: 100%; 
+  background-color: var(--pink); font-size: 1.333rem; 
+  font-family: 'LOTTERIACHAB'; font-weight: normal; 
+  color: var(--White); 
+  text-align: center; 
+  text-shadow: 0px 7px 4px rgba(0,0,0,0.25); 
+}
+.skill_memoji .bubble.on {  
+  animation-name: pos;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.skill_memoji .bubble_tail:after {bottom: -16px; left: 40px; transform: rotate(22deg);}
+
+.skill_memoji .bubble > .icon_skill {display: inline-block; width: 24px; height: 24px; margin-left: 2px; background-image: url("/src/assets/images/icon/skill.png"); background-repeat: no-repeat; background-size: contain; background-position:center center; vertical-align: sub;}
+
+
+
+@keyframes pos {
+  0% {
+    top: -100px
+  } 
+  100% {
+    top: 100%; 
+  } 
+}

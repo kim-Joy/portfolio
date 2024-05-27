@@ -1,3 +1,22 @@
+
+/* ====================================
+ media query
+==================================== */
+@media (max-width: 689px){
+  html,body {font-size: 14px;}
+}
+
+@media (max-width: 430px){
+  html,body {font-size: 12px;}
+}
+
+
+
+
+
+/* ====================================
+ container query
+==================================== */
 @container res-container (max-width: 700px) {
   .name_tag_group {
     width: 90%;
@@ -12,12 +31,21 @@
     margin-top: 0;
     transform: translateX(-50%);
   }
+  .skill .pos_center {
+    grid-template-columns: 50px auto 50px;
+  }
+  .skill_icon.skill_icon_ps {background-position: center center;}
+  .skill_icon.skill_icon_github {background-position: center bottom;}
+
+  .myself .pos_center {
+    grid-template-columns: 300px 120px;
+  }
 }
 
-@media (max-width: 689px){
-  body {font-size: 14px;}
-}
 
-@media (max-width: 430px){
-  body {font-size: 12px;}
+@container res-container (max-width: 482px) {
+  .header {background-color: blue;}
+  .skill .pos_center {
+    grid-template-columns: 30px auto 30px;
+  }
 }

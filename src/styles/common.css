@@ -15,6 +15,23 @@
 
 
 
+.bubble {position: relative; box-sizing: border-box; padding: 20px 20px; border-radius: 80px;}
+.bubble_tail:after {
+  content: ''; 
+  position: absolute;
+  width: 40px; height: 22px; 
+  background-color: inherit;
+  -webkit-mask-image: url("/src/assets/images/icon/bubble_tail.svg"); 
+  mask-image: url("/src/assets/images/icon/bubble_tail.svg"); -webkit-mask-repeat: no-repeat; 
+  mask-repeat: no-repeat; 
+  -webkit-mask-position: center center; 
+  mask-position: center center; 
+  -webkit-mask-size: contain; 
+  mask-size: contain;
+}
+
+
+
 
 
 
