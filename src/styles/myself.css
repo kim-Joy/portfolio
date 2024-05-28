@@ -19,7 +19,7 @@
   gap: 10px 0;
   
 }
-.myself .bubble {padding: 24px 40px; background-color: var(--blue); text-align: right; font-size: 1.444rem; color: var(--White); font-weight: 700;}
+.myself .bubble {padding: 24px 40px; background-color: var(--blue); text-align: right; font-size: 1.444rem; color: var(--white); font-weight: 700;}
 .myself .bubble:first-of-type {padding: 24px 40px 24px 60px; }
 .myself .bubble.blur span{filter: blur(3.2px);}
 .myself .bubble_tail:after{bottom: -10px; right: 15px; }

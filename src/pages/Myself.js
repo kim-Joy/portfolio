@@ -12,7 +12,7 @@ class Myself extends Component {
 
 
     return (
-      <div className="myself">
+      <article className="myself" id="myself">
         <div className="pos_center">
           <ul className="bubble_group">
             <li className="bubble">
@@ -34,7 +34,7 @@ class Myself extends Component {
             <img src={Memoji_fighting} className="memoji" alt="노트북 보는 미모지" />
           </div>
         </div>
-      </div>
+      </article>
     );
   }
 }

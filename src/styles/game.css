@@ -1,0 +1,34 @@
+.balance_game .pos_center {
+  width: 100%;
+  display: grid; 
+  grid-template-columns: 320px 460px;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  justify-items: stretch;
+  gap: 0 140px;
+  transition: 1s;
+}
+
+
+.balance_asking {margin-bottom: 3.333em}
+.balance_asking .count {color: var(--guide); font-size: 1.333rem; font-weight: 400; text-align: center; }
+.balance_asking > h3 {color: var(--complementary); font-size: 2.222rem; font-weight: 700; text-align: center; }
+
+
+.balance_answer {display: flex; flex-wrap: wrap; flex-direction: column; gap: 1.333em 0;}
+.balance_radio_item .balance_input_hidden {
+  position: absolute; 
+  width: 1px;
+  height: 1px;
+  margin: -1px; 
+  clip-path: polygon(0 0, 0 0, 0 0);
+  clip-path: inset(50%); 
+  clip: rect(0, 0, 0, 0); 
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.balance_radio_item .balance_label {display: block; width: 100%; padding: 15px 20px; box-sizing: border-box; border-radius: 50px; background-color: var(--green); }
+.balance_radio_item .balance_a {display: block; font-size: 1.333rem; font-weight: 500; text-align: center; line-height: 1.2em;}
+
+.balance_guide {margin-top: 100px; grid-column: 1 / span2; font-size: 14px; font-weight: 400; color: var(--guide); text-align: center; }

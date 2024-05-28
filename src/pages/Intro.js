@@ -10,7 +10,7 @@ class Intro extends Component {
 
 
     return (
-      <div className="intro">
+      <article className="intro" id="intro">
         <div className="name_tag_group" >
           <div className="name_info_tag" >
             <div className="info">
@@ -57,7 +57,7 @@ class Intro extends Component {
         <div className="gradation_bg" style={{display: 'none'}}>
           <span className="gradation_line"></span>
         </div>
-      </div>
+      </article>
     );
   }
 }

@@ -2,44 +2,44 @@ html,body {
   width: 100%; height: 100%;
   container-name: res-container; container-type: inline-size;
   font-size: 18px;  
-  font-family: 'Pretendard', '맑은 고딕','돋움', 'Koulen', -apple-system, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo';}
+  font-family: 'Pretendard', '맑은 고딕','돋움', 'Koulen', -apple-system, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo';
+}
+
 #root {width: 100%; height: 100%; }
-
-
 .App {
   width: 100%; height: 100%;
   background-color: var(--mode);
 }
 
-.pos_center {
-  position: absolute; 
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.test_box {
+/* 레이아웃 X축  */
+.fullpage_X {
   overflow: auto;
   scroll-snap-type: x mandatory
 }
 
-.test {
-  width: 400%; height: calc(100vh - 80px); 
+.fullpage_article {
+  height: calc(100vh - 80px); 
   display: flex; flex-wrap: nowrap;
 }
-.test > div {
+.fullpage_article > article {
   position: relative;
   width: 100%;
   height: calc(100vh - 80px);
   scroll-snap-align: start;
   scroll-snap-stop: normal
 }
-.test:after {content: ''; clear: both; display: block; visibility: hidden;}
+.fullpage_article:after {content: ''; clear: both; display: block; visibility: hidden;}
+
+
+
 
 
 /* ====================================
  HEADER
 ==================================== */
 .header {position: sticky; top: 0; left: 0; z-index: 99; width: 100%; height: 80px; background-color: red; }
+
+.header_gnb {display: grid; grid-template-columns: 50px auto 50px; padding-top: 15px;}
 
 .btn_menu_group {}
 
@@ -49,7 +49,7 @@ html,body {
 
 .btn_mode {
   width: 50px; height: 50px; 
-  background-color: var(--mode); 
+  background-color: var(--complementary); 
   background-repeat: no-repeat; 
   background-size: contain; 
   background-position: center center; 
@@ -60,6 +60,10 @@ html,body {
   mask-position: center center; 
   -webkit-mask-size: contain; 
   mask-size: contain;
+}
+.btn_mode.on {
+  -webkit-mask-image: url("/src/assets/images/icon/moon.svg"); 
+  mask-image: url("/src/assets/images/icon/moon.svg"); 
 }
 
 
@@ -77,18 +81,18 @@ html,body {
 /* gnb */
 .nav.active {display: block;}
 .nav {display: none; position: fixed; top: 0; left: 0; z-index: 100; width: 100%; height: 100%; background-color: var(--mode); }
-.gnb_category {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.gnb_category {position: absolute; top: 50%; left: 50%; max-width: 500px; width: 100%; padding: 0 40px; box-sizing: border-box; transform: translate(-50%, -50%); }
 
-.gnb_category li + li {margin-top: 3.888em}
-.gnb_category li a {position: relative; display: inline-block; padding-right: 60px; background-repeat: no-repeat; background-size: auto 100%; background-position: right center; color: var(--complementary); font-family: 'Lacquer'; font-size: 2.777rem; }
-.gnb_category li.category_intro a {background-image: url("/src/assets/images/icon/hand.png");}
-.gnb_category li.category_self a {background-image: url("/src/assets/images/memoji/my.svg");}
-.gnb_category li.category_skill a  {background-image: url("/src/assets/images/icon/skill.png");}
-.gnb_category li.category_game a {background-image: url("/src/assets/images/icon/balance.png");}
+.gnb_category li + li {margin-top: 3.888rem}
+.gnb_category li .btn_category {position: relative; display: inline-block; padding-right: 3.888rem; background-repeat: no-repeat; background-size: auto 100%; background-position: right center; color: var(--complementary); font-family: 'Lacquer'; font-size: 2.777rem; text-align: left; }
+.gnb_category li.category_intro .btn_category {background-image: url("/src/assets/images/icon/hand.png");}
+.gnb_category li.category_myself .btn_category {background-image: url("/src/assets/images/memoji/my.svg");}
+.gnb_category li.category_skill .btn_category {background-image: url("/src/assets/images/icon/skill.png");}
+.gnb_category li.category_game .btn_category {background-image: url("/src/assets/images/icon/balance.png");}
 
-.gnb_category li:hover a:before {content:''; position: absolute; bottom: 0; left: 0; width: calc(100% - 60px); height: 25px; opacity: 0.5;}
+.gnb_category li:hover .btn_category:before {content:''; position: absolute; bottom: 0; left: 0; width: calc(100% - 3.888rem); height: 30%; opacity: 0.5;}
 
-.gnb_category .category_intro a:before {background-color: var(--purple);}
-.gnb_category .category_self a:before {background-color: var(--pink);}
-.gnb_category .category_skill a:before {background-color: var(--blue);}
-.gnb_category .category_game a:before {background-color: var(--green);}
+.gnb_category .category_intro .btn_category:before {background-color: var(--purple);}
+.gnb_category .category_myself .btn_category:before {background-color: var(--pink);}
+.gnb_category .category_skill .btn_category:before {background-color: var(--blue);}
+.gnb_category .category_game .btn_category:before {background-color: var(--green);}

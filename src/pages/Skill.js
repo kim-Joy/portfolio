@@ -23,7 +23,7 @@ class Skill extends Component {
   
   render() {
     return (
-      <div className="skill">
+      <article className="skill" id="skill">
         <div className="pos_center">
           <ul className="skill_item_group">
             {skill_item_coding.map((item) =>(
@@ -49,7 +49,7 @@ class Skill extends Component {
             ))}
           </ul>
         </div>
-      </div>
+      </article>
     );
   }
 }

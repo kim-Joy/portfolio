@@ -45,6 +45,7 @@
 
 @container res-container (max-width: 482px) {
   .header {background-color: blue;}
+  .gnb_category li .btn_category {font-size: 24px; }
   .skill .pos_center {
     grid-template-columns: 30px auto 30px;
   }

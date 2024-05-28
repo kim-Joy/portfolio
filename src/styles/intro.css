@@ -101,7 +101,7 @@
   display: flex;
   box-sizing: border-box;
   font-family: Koulen; 
-  color: var(--White); 
+  color: var(--white); 
   text-transform: uppercase; }
 .name_info_tag .info_txt dl + dl {margin-top: 10px; }
 .name_info_tag .info_txt dl > dt {flex-basis: 60px; font-size: 1rem; font-weight: 400; }

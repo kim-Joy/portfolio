@@ -1,0 +1,18 @@
+.confrim { }
+
+
+
+
+
+
+
+
+/* notification 
+================================= */
+.notification {position: absolute; top: 80px; left: 50%; transform: translateX(-50%);}
+
+.notification .txt_group {position: relative; max-width: 460px; width: 100%;padding: 20px 40px 20px 5.555em; box-sizing: content-box; background-image: url("/src/assets/images/icon/notification.png"); background-repeat: no-repeat; background-size: 70px auto; background-position: left 0.833em top 0.777em;}
+.notification .txt_group:after {content: ''; position: absolute; top: 0; left: 0; z-index: -1; width: 100%; height: 100%; border-radius: 25px; background-color: rgba(255,255,255,0.80); filter:blur(3px); }
+
+.notification h2 {font-size: 1rem; font-weight: 400; color: var(--blcak); }
+.notification p {margin-top: 4px; font-size: 1rem; font-weight: 400; color: var(--blcak);}
