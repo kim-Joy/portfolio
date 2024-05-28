@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e1e64acf.css",
-    "main.js": "/portfolio/static/js/main.77b1aeaa.js",
+    "main.css": "/portfolio/static/css/main.763a340b.css",
+    "main.js": "/portfolio/static/js/main.f865cefd.js",
     "static/media/Pretendard-Thin.ttf": "/portfolio/static/media/Pretendard-Thin.23965237737042c7c087.ttf",
     "static/media/Pretendard-ExtraLight.ttf": "/portfolio/static/media/Pretendard-ExtraLight.3a1f8545bfb6498f1f14.ttf",
     "static/media/Pretendard-Light.ttf": "/portfolio/static/media/Pretendard-Light.be916151766e60d80835.ttf",
@@ -21,6 +21,7 @@
     "static/media/Pretendard-Regular.woff": "/portfolio/static/media/Pretendard-Regular.303253288b0ba99db532.woff",
     "static/media/Pretendard-ExtraLight.woff": "/portfolio/static/media/Pretendard-ExtraLight.caca3ea2e764095a60e9.woff",
     "static/media/Pretendard-Thin.woff": "/portfolio/static/media/Pretendard-Thin.e7b3f421a3a379ef4137.woff",
+    "static/media/gradation_bg_top.png": "/portfolio/static/media/gradation_bg_top.ac7a3a343531dc49dc33.png",
     "static/media/Pretendard-Black.woff2": "/portfolio/static/media/Pretendard-Black.c2be1420d8fb4b99a671.woff2",
     "static/media/Pretendard-ExtraBold.woff2": "/portfolio/static/media/Pretendard-ExtraBold.26df84c2b3b8cb8a4b0c.woff2",
     "static/media/Pretendard-Bold.woff2": "/portfolio/static/media/Pretendard-Bold.0c6f5e225ff28f456183.woff2",
@@ -36,15 +37,18 @@
     "static/media/Lacquer-Regular.woff": "/portfolio/static/media/Lacquer-Regular.9d5a2c92fa181758afcf.woff",
     "static/media/computer.svg": "/portfolio/static/media/computer.149f431239599db55cdfd807f2fa62b6.svg",
     "static/media/my.svg": "/portfolio/static/media/my.5019212114bb52501758.svg",
+    "static/media/v.svg": "/portfolio/static/media/v.5019212114bb52501758b3efd729970d.svg",
     "static/media/fighting.svg": "/portfolio/static/media/fighting.ee5680398194bc1a60dabd2eaf0878c6.svg",
     "static/media/Lacquer-Regular.woff2": "/portfolio/static/media/Lacquer-Regular.f33be84238bdb4e594b4.woff2",
     "static/media/face_heart.svg": "/portfolio/static/media/face_heart.a25c66f74c2ba5bdaf8e.svg",
     "static/media/Koulen-Regular.ttf": "/portfolio/static/media/Koulen-Regular.e23002c698c2632e9437.ttf",
     "static/media/fishbone_eye.png": "/portfolio/static/media/fishbone_eye.f5c8fedff1b7fb885f3b.png",
+    "static/media/gradation_bg_bottom.png": "/portfolio/static/media/gradation_bg_bottom.7a0969d5e6a85f17c9ef.png",
     "static/media/Koulen-Regular.woff": "/portfolio/static/media/Koulen-Regular.0ca6aff31c3c4750c075.woff",
     "static/media/Koulen-Regular.woff2": "/portfolio/static/media/Koulen-Regular.d0e35d1e627821441cf8.woff2",
     "static/media/weclome_sign.svg": "/portfolio/static/media/weclome_sign.e006a6a530e937d2b54b.svg",
     "static/media/portfolio.png": "/portfolio/static/media/portfolio.490eed6bc45cda651dad.png",
+    "static/media/moon.svg": "/portfolio/static/media/moon.fc6479ee197fc82d0807.svg",
     "static/media/nametag.svg": "/portfolio/static/media/nametag.cc05fb3024f4d0c2a969.svg",
     "static/media/fishbone.svg": "/portfolio/static/media/fishbone.f91c27d95249feafb8f5.svg",
     "static/media/start_line.svg": "/portfolio/static/media/start_line.4bfb44712fce1c61cd51.svg",
@@ -64,11 +68,11 @@
     "static/media/skill_css.svg": "/portfolio/static/media/skill_css.25b6606f71187d34ee20.svg",
     "static/media/skill_html.svg": "/portfolio/static/media/skill_html.a45fc65b2667def83742.svg",
     "static/media/bubble_tail.svg": "/portfolio/static/media/bubble_tail.6e15617445216c1cca89.svg",
-    "main.e1e64acf.css.map": "/portfolio/static/css/main.e1e64acf.css.map",
-    "main.77b1aeaa.js.map": "/portfolio/static/js/main.77b1aeaa.js.map"
+    "main.763a340b.css.map": "/portfolio/static/css/main.763a340b.css.map",
+    "main.f865cefd.js.map": "/portfolio/static/js/main.f865cefd.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1e64acf.css",
-    "static/js/main.77b1aeaa.js"
+    "static/css/main.763a340b.css",
+    "static/js/main.f865cefd.js"
   ]
 }
