@@ -1,3 +1,4 @@
+.myself {background-image: url('/src/assets/images/pages/gradation_bg_top.png'), url('/src/assets/images/pages/gradation_bg_bottom.png'); background-repeat: no-repeat; background-position: left top, left bottom; background-size: 100% 100%, auto; }
 .myself .pos_center {
   width: 100%;
   z-index: 1;

@@ -14,12 +14,15 @@ class Header extends Component {
     const BTN_MODE = document.querySelector('.btn_mode');
     const APP = document.querySelector('.App');
 
-    BTN_MODE.classList.add('on');
-    if(BTN_MODE.classList.contains('on')) {
-      APP.classList.add('mode-Light');
-    } else {
+    if (BTN_MODE.classList.contains('on')) {
+      BTN_MODE.classList.remove('on');
+      APP.classList.remove('mode-Light');
       APP.classList.add('mode-Dark');
-    }
+  } else {
+      BTN_MODE.classList.add('on');
+      APP.classList.remove('mode-Dark');
+      APP.classList.add('mode-Light');
+  }
     
   }
 

@@ -24,7 +24,10 @@
 }
 
 @container res-container (max-width: 689px) {
-  .header {background-color: orange;}
+  .header {background-color: orange; height: 50px;}
+  .header_gnb {grid-template-columns: 30px auto 30px;padding-top: 10px;}
+  .btn_mode {} 
+
   .name_tag_group {
     display: block;
     width: 100%;

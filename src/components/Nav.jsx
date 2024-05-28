@@ -9,9 +9,17 @@ const nav_catrgory = [
   {key: "4", class: "game",title: "Balance game", to: '/Game'}
 ]
 
+
 const scrollToSection = (id) => {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   document.querySelector('.nav').classList.remove('active');
+  const name_tag_animation = document.querySelector('.name_info_tag');
+  
+  if(id === 'intro'){
+    name_tag_animation.classList.add('on');
+  } else {
+    name_tag_animation.classList.remove('on');
+  }
 };
 
 class Nav extends Component {
