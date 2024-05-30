@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.763a340b.css",
-    "main.js": "/portfolio/static/js/main.f865cefd.js",
+    "main.css": "/portfolio/static/css/main.55fe8626.css",
+    "main.js": "/portfolio/static/js/main.cac2fa7f.js",
+    "static/media/celeb.mp4": "/portfolio/static/media/celeb.d9807ee156ecedc6022a.mp4",
     "static/media/Pretendard-Thin.ttf": "/portfolio/static/media/Pretendard-Thin.23965237737042c7c087.ttf",
     "static/media/Pretendard-ExtraLight.ttf": "/portfolio/static/media/Pretendard-ExtraLight.3a1f8545bfb6498f1f14.ttf",
     "static/media/Pretendard-Light.ttf": "/portfolio/static/media/Pretendard-Light.be916151766e60d80835.ttf",
@@ -21,6 +22,7 @@
     "static/media/Pretendard-Regular.woff": "/portfolio/static/media/Pretendard-Regular.303253288b0ba99db532.woff",
     "static/media/Pretendard-ExtraLight.woff": "/portfolio/static/media/Pretendard-ExtraLight.caca3ea2e764095a60e9.woff",
     "static/media/Pretendard-Thin.woff": "/portfolio/static/media/Pretendard-Thin.e7b3f421a3a379ef4137.woff",
+    "static/media/psy.png": "/portfolio/static/media/psy.fa647adf0e85f14156b9.png",
     "static/media/gradation_bg_top.png": "/portfolio/static/media/gradation_bg_top.ac7a3a343531dc49dc33.png",
     "static/media/Pretendard-Black.woff2": "/portfolio/static/media/Pretendard-Black.c2be1420d8fb4b99a671.woff2",
     "static/media/Pretendard-ExtraBold.woff2": "/portfolio/static/media/Pretendard-ExtraBold.26df84c2b3b8cb8a4b0c.woff2",
@@ -34,8 +36,9 @@
     "static/media/LOTTERIACHAB.woff": "/portfolio/static/media/LOTTERIACHAB.60ecfec517d9238ece93.woff",
     "static/media/LOTTERIACHAB.woff2": "/portfolio/static/media/LOTTERIACHAB.2a9db743422ee5d966d6.woff2",
     "static/media/Lacquer-Regular.ttf": "/portfolio/static/media/Lacquer-Regular.8c2474231c86ae3d4663.ttf",
+    "static/media/heart.svg": "/portfolio/static/media/heart.3961d30fedeec90ae69fa565bb47f536.svg",
     "static/media/Lacquer-Regular.woff": "/portfolio/static/media/Lacquer-Regular.9d5a2c92fa181758afcf.woff",
-    "static/media/computer.svg": "/portfolio/static/media/computer.149f431239599db55cdfd807f2fa62b6.svg",
+    "static/media/computer.svg": "/portfolio/static/media/computer.f8d1534b22f47878d372d085f4908367.svg",
     "static/media/my.svg": "/portfolio/static/media/my.5019212114bb52501758.svg",
     "static/media/v.svg": "/portfolio/static/media/v.5019212114bb52501758b3efd729970d.svg",
     "static/media/fighting.svg": "/portfolio/static/media/fighting.ee5680398194bc1a60dabd2eaf0878c6.svg",
@@ -48,7 +51,7 @@
     "static/media/Koulen-Regular.woff2": "/portfolio/static/media/Koulen-Regular.d0e35d1e627821441cf8.woff2",
     "static/media/weclome_sign.svg": "/portfolio/static/media/weclome_sign.e006a6a530e937d2b54b.svg",
     "static/media/portfolio.png": "/portfolio/static/media/portfolio.490eed6bc45cda651dad.png",
-    "static/media/moon.svg": "/portfolio/static/media/moon.fc6479ee197fc82d0807.svg",
+    "static/media/moon.svg": "/portfolio/static/media/moon.aa11f0b2a82183a345bb.svg",
     "static/media/nametag.svg": "/portfolio/static/media/nametag.cc05fb3024f4d0c2a969.svg",
     "static/media/fishbone.svg": "/portfolio/static/media/fishbone.f91c27d95249feafb8f5.svg",
     "static/media/start_line.svg": "/portfolio/static/media/start_line.4bfb44712fce1c61cd51.svg",
@@ -58,8 +61,8 @@
     "static/media/skill_ps.svg": "/portfolio/static/media/skill_ps.2fed373e4f549934acc5.svg",
     "static/media/skill_github.svg": "/portfolio/static/media/skill_github.72c74497714eec6b97c1.svg",
     "static/media/sun.svg": "/portfolio/static/media/sun.5c8c9c71e5a9e00aeb81.svg",
-    "static/media/skill_figma.svg": "/portfolio/static/media/skill_figma.6d9dc6330f0cb8abb662.svg",
     "index.html": "/portfolio/index.html",
+    "static/media/skill_figma.svg": "/portfolio/static/media/skill_figma.6d9dc6330f0cb8abb662.svg",
     "static/media/gradation_line.svg": "/portfolio/static/media/gradation_line.99ead4c3000a6026a694.svg",
     "static/media/skill_ai.svg": "/portfolio/static/media/skill_ai.4746dcccd2b1d21c2376.svg",
     "static/media/blasting.svg": "/portfolio/static/media/blasting.2580b289a629102bca97.svg",
@@ -68,11 +71,11 @@
     "static/media/skill_css.svg": "/portfolio/static/media/skill_css.25b6606f71187d34ee20.svg",
     "static/media/skill_html.svg": "/portfolio/static/media/skill_html.a45fc65b2667def83742.svg",
     "static/media/bubble_tail.svg": "/portfolio/static/media/bubble_tail.6e15617445216c1cca89.svg",
-    "main.763a340b.css.map": "/portfolio/static/css/main.763a340b.css.map",
-    "main.f865cefd.js.map": "/portfolio/static/js/main.f865cefd.js.map"
+    "main.55fe8626.css.map": "/portfolio/static/css/main.55fe8626.css.map",
+    "main.cac2fa7f.js.map": "/portfolio/static/js/main.cac2fa7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.763a340b.css",
-    "static/js/main.f865cefd.js"
+    "static/css/main.55fe8626.css",
+    "static/js/main.cac2fa7f.js"
   ]
 }
