@@ -6,7 +6,8 @@ const nav_catrgory = [
   {key: "1", class: "intro", title: "intro", to: '/Intro'},
   {key: "2", class: "myself", title: "my self", to: '/MySelf'},
   {key: "3", class: "skill", title: "Skill", to: '/Skill'},
-  {key: "4", class: "game",title: "Balance game", to: '/Game'}
+  {key: "4", class: "game",title: "Balance game", to: '/Game'},
+  {key: "5", class: "finish",title: "Good bye", to: '/Finish'}
 ]
 
 
