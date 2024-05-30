@@ -5,8 +5,6 @@ const { Component } = require("react");
 
 
 class Intro extends Component {
-  
-  
 
   componentDidMount() {
     const name_tag_animation = document.querySelector('.name_info_tag');

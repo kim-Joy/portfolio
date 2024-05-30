@@ -28,7 +28,8 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.balance_radio_item .balance_label:has(.balance_input_hidden:checked) {background-color: red;}
 .balance_radio_item .balance_label {display: block; width: 100%; padding: 15px 20px; box-sizing: border-box; border-radius: 50px; background-color: var(--green); }
-.balance_radio_item .balance_a {display: block; font-size: 1.333rem; font-weight: 500; text-align: center; line-height: 1.2em;}
+.balance_radio_item .balance_a {display: block; font-size: 1.333rem; font-weight: 500; text-align: center; line-height: 1.2em; cursor: pointer; }
 
 .balance_guide {margin-top: 100px; grid-column: 1 / span2; font-size: 14px; font-weight: 400; color: var(--guide); text-align: center; }

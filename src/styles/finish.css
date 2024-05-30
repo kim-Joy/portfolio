@@ -1,1 +1,12 @@
-.finish {}
+.finish .pos_center{
+  width: 100%;
+  z-index: 1;
+  display: grid; 
+  grid-template-columns: 375px 500px;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  justify-items: stretch;
+  gap: 0 20px;
+  transition: 1s;
+}

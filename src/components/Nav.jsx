@@ -26,6 +26,7 @@ class Nav extends Component {
   render() {
     return (
       <div className="nav">
+        <button type="button"><span></span></button>
         <nav className="gnb_category"> 
           <ol>
             {nav_catrgory.map((item) =>(

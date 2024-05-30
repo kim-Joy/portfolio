@@ -24,9 +24,20 @@
 }
 
 @container res-container (max-width: 689px) {
-  .header {background-color: orange; height: 50px;}
-  .header_gnb {grid-template-columns: 30px auto 30px;padding-top: 10px;}
-  .btn_mode {} 
+  .header {
+    --height: 50px; 
+    background-color: orange; 
+    height: var(--hd_height); 
+  }
+  .header_gnb {grid-template-columns: 30px auto 30px; padding-top: 10px;}
+
+  .btn_menu span {width: 22px; height: 2px;}
+  .btn_menu span:nth-of-type(1) {top: 6px; }
+  .btn_menu span:nth-of-type(2) {top: 14px; }
+  .btn_menu span:nth-of-type(3) {bottom: 6px; }
+
+  .btn_menu.on span:nth-of-type(1) {top: 17px; transform: rotate(45deg);}
+  .btn_menu.on span:nth-of-type(3) {bottom: 11px; transform: rotate(-45deg);}
 
   .name_tag_group {
     display: block;
@@ -38,7 +49,6 @@
     grid-template-columns: 50px auto 50px;
   }
   .skill_icon.skill_icon_ps {background-position: center center;}
-  .skill_icon.skill_icon_github {background-position: center bottom;}
 
   .myself .pos_center {
     grid-template-columns: 300px 120px;
@@ -47,9 +57,16 @@
 
 
 @container res-container (max-width: 482px) {
-  .header {background-color: blue;}
-  .gnb_category li .btn_category {font-size: 24px; }
+  .header {background-color: blue; }
+
+
+  
   .skill .pos_center {
     grid-template-columns: 30px auto 30px;
   }
+}
+
+
+@container res-container (max-width: 374px) { 
+  .gnb_category li .btn_category {padding-right: 25px; background-size: 20px auto; font-size: 24px; }
 }

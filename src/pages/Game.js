@@ -27,7 +27,7 @@ class Game extends Component {
             </div>
             <ul className="balance_answer">
               <li className="balance_radio_item">
-                <label for="answer_Q1" className="balance_label">
+                <label htmlFor="answer_Q1" className="balance_label">
                   <input id="answer_Q1" name="Q1" type="radio" className="balance_input_hidden"/>
                   <span className="balance_a">
                     다재다능한<br />실력있는 친구
@@ -35,7 +35,7 @@ class Game extends Component {
                 </label>
               </li>
               <li className="balance_radio_item">
-                <label for="answer_Q2" className="balance_label">
+                <label htmlFor="answer_Q2" className="balance_label">
                   <input id="answer_Q2" name="Q1" type="radio" className="balance_input_hidden"/>
                   <span className="balance_a">
                     다재다능한<br />실력있는 친구

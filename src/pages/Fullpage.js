@@ -15,9 +15,11 @@ class Fullpage extends Component {
       numberOfDivs: 0
     };
   }
+
   componentDidMount() {
-    const numberOfDivs = document.querySelectorAll('.fullpage_article > article').length;
+    const numberOfDivs = document.querySelectorAll('.fullpage_article > *').length;
     this.setState({ numberOfDivs });
+
   }
 
   render() {

@@ -1,16 +1,23 @@
 import {Link} from 'react-router-dom';
 import Nav from "components/Nav"
+
+import music from 'assets/music/celeb.mp4';
+
 const { Component } = require("react");
 
 
 class Header extends Component {
 
-  Menuhandler = () => { 
+  Menu = () => { 
+    const header_bg = document.querySelector('.header');
     const nav = document.querySelector('.nav');
+    const menu = document.querySelector('.btn_menu');
     nav.classList.toggle('active');
+    header_bg.classList.toggle('on');
+    menu.classList.toggle('on');
   }
 
-  Modehandler = () => { 
+  SystemMode = () => { 
     const BTN_MODE = document.querySelector('.btn_mode');
     const APP = document.querySelector('.App');
 
@@ -26,6 +33,16 @@ class Header extends Component {
     
   }
 
+  player = () => { 
+    const audio = document.querySelector('#audio');
+    
+    if(!audio.paused){
+      audio.pause();
+    } else {
+      audio.play();
+    }
+  }
+
   render() {
     return (
       <div className="header">
@@ -35,18 +52,23 @@ class Header extends Component {
         </div>
         <h1 className="visuallyhidden">logo</h1>
         <header className="header_gnb">
-          <div clssName="btn_menu_group">
-            <button type="button" className="btn_menu" onClick={this.Menuhandler}>
+          <button type="button" className="btn_menu" onClick={this.Menu}>
               <p className="visuallyhidden">메뉴</p>
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
-            </button>
-          </div>
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
           <div className="dynamic_island">
-              bgm
+            <button type="button" className="btn_island" onClick={this.player}>
+                <span className="album_art"></span>
+                <span className="waveform"></span>
+            </button>
+            <p className="visuallyhidden">음악 재생/정지</p>
+            <audio controls autoplay="autoplay" className="visuallyhidden" id="audio">
+              <source src={music} type="audio/mpeg" ></source>
+            </audio>
           </div>
-          <button type="button" className="btn_mode" onClick={this.Modehandler}>
+          <button type="button" className="btn_mode" onClick={this.SystemMode}>
             <span className="visuallyhidden">mode system</span>
           </button>
         </header>

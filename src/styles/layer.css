@@ -14,7 +14,8 @@ html,body {
 /* 레이아웃 X축  */
 .fullpage_X {
   overflow: auto;
-  scroll-snap-type: x mandatory
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .fullpage_article {
@@ -23,7 +24,7 @@ html,body {
 }
 .fullpage_article > article {
   position: relative;
-  width: 100%; height: 100%;
+  width: 100vw; height: 100%;
   scroll-snap-align: start;
   scroll-snap-stop: normal
 }
@@ -36,16 +37,42 @@ html,body {
 /* ====================================
  HEADER
 ==================================== */
-.header {position: fixed; top: 0; left: 0; z-index: 99; width: 100%; height: 80px; padding: 0 20px; box-sizing: border-box; background-color: transparent; }
+.header {position: fixed; top: 0; left: 0; z-index: 99; width: 100%; height: var(--hd_height); padding: 0 20px; box-sizing: border-box; background-color: transparent;}
+.header.on {background-color: var(--mode);}
 
 .header_gnb {display: grid; grid-template-columns: 50px auto 50px; padding-top: 15px;}
 
-.btn_menu_group {}
+.btn_menu {position: relative;}
+.btn_menu span {position: absolute; width: 30px; height: 4px; border-radius: 3px; box-sizing: border-box; background-color: var(--complementary); transition: .3s; }
+.btn_menu span:nth-of-type(1) {top: 11px; left: 0; }
+.btn_menu span:nth-of-type(2) {top: 23px; left: 0; }
+.btn_menu span:nth-of-type(3) {bottom: 11px; left: 0; }
+
+/* menu */
+.btn_menu.on span:nth-of-type(1) {top: 22px; transform: rotate(45deg);}
+.btn_menu.on span:nth-of-type(2) {left: -9999px;}
+.btn_menu.on span:nth-of-type(3) {bottom: 24px; transform: rotate(-45deg);}
 
 
-.dynamic_island {}
+.dynamic_island {position: relative;}
+.dynamic_island .btn_island {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  width: 220px; height: 100%; 
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  border: 1px solid rgba(255,255,255,1); background-color: var(--mode);}
 
+.dynamic_island .album_art {max-width: 26px; max-height: 26px; width: 100%; height: 100%; border-radius: 5px; background-color: #2C2C2C;background-image: url("/src/assets/images/icon/psy.png"); background-repeat: no-repeat; background-size: contain; background-position: center center; aspect-ratio: 1/1; overflow: hidden;}
+.dynamic_island .waveform {width: 26px; background-color: red; aspect-ratio: 2/1;}
+.dynamic_island.active .waveform {}
 
+#audio {position: absolute; top: 0; left: 0; z-index: 100;}
+
+/* mode */
 .btn_mode {
   background-color: var(--complementary); 
   background-repeat: no-repeat; 
@@ -79,11 +106,11 @@ html,body {
 
 /* gnb */
 .nav.active {display: block;}
-.nav {display: none; position: fixed; top: 0; left: 0; z-index: 100; width: 100%; height: 100%; background-color: var(--mode); }
-.gnb_category {position: absolute; top: 50%; left: 50%; max-width: 500px; width: 100%; padding: 0 40px; box-sizing: border-box; transform: translate(-50%, -50%); }
+.nav {display: none; position: fixed; top: var(--hd_height); left: 0; z-index: 100; width: 100%; height: calc(100% - var(--hd_height)); background-color: var(--mode); }
+.gnb_category {position: absolute; top: calc(50% - var(--hd_height)); left: 50%; max-width: 500px; width: 100%; padding: 0 40px; box-sizing: border-box; transform: translate(-50%, -50%); }
 
 .gnb_category li + li {margin-top: 3.888rem}
-.gnb_category li .btn_category {position: relative; display: inline-block; padding-right: 3.888rem; background-repeat: no-repeat; background-size: auto 100%; background-position: right center; color: var(--complementary); font-family: 'Lacquer'; font-size: 2.777rem; text-align: left; }
+.gnb_category li .btn_category {position: relative; display: inline-block; padding-right: 3.888rem; background-repeat: no-repeat; background-size: 2.777rem auto; background-position: right center; color: var(--complementary); font-family: 'Lacquer'; font-size: 2.777rem; text-align: left; transition: 1s;}
 .gnb_category li.category_intro .btn_category {background-image: url("/src/assets/images/icon/hand.png");}
 .gnb_category li.category_myself .btn_category {background-image: url("/src/assets/images/memoji/my.svg");}
 .gnb_category li.category_skill .btn_category {background-image: url("/src/assets/images/icon/skill.png");}

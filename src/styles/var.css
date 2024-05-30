@@ -8,6 +8,13 @@
   --blue: #2AA9F5;
   --purple: #9D50F5;
   --pink : #FF3BA1;
+
+
+}
+
+.header {
+  --height: 80px;
+  --hd_height : var(--height);
 }
 
 
