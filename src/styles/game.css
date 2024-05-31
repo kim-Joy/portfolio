@@ -2,7 +2,7 @@
   width: 100%;
   display: grid; 
   grid-template-columns: 320px 460px;
-  align-items: center;
+  align-items: start;
   align-content: space-between;
   justify-content: center;
   justify-items: stretch;
@@ -13,10 +13,24 @@
 
 .balance_asking {margin-bottom: 3.333em}
 .balance_asking .count {color: var(--guide); font-size: 1.333rem; font-weight: 400; text-align: center; }
-.balance_asking > h3 {color: var(--complementary); font-size: 2.222rem; font-weight: 700; text-align: center; }
+.balance_asking > h2 {color: var(--complementary); font-size: 2.222rem; font-weight: 700; text-align: center; }
+
+.balance_list_group {position: relative; }
+
+.balance_answer {position: absolute; top: 0; left: 0; width: 100%; display: none; }
+
+.balance_answer.on {display: flex; flex-wrap: wrap; flex-direction: column; gap: 1.333em 0; animation-name: opacity; animation-duration: 2s; animation-fill-mode:forwards;}
+
+@keyframes opacity {
+  0% { 
+    opacity: 0;
+  } 
+  100% { 
+    opacity: 1; 
+  } 
+}
 
 
-.balance_answer {display: flex; flex-wrap: wrap; flex-direction: column; gap: 1.333em 0;}
 .balance_radio_item .balance_input_hidden {
   position: absolute; 
   width: 1px;
