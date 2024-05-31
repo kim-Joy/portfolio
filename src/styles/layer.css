@@ -40,7 +40,12 @@ html,body {
 .header {position: fixed; top: 0; left: 0; z-index: 99; width: 100%; height: var(--hd_height); padding: 0 20px; box-sizing: border-box; background-color: transparent;}
 .header.on {background-color: var(--mode);}
 
-.header_gnb {display: grid; grid-template-columns: 50px auto 50px; padding-top: 15px;}
+.header_gnb {
+  display: grid; 
+  grid-template-columns: 50px auto 50px;
+  gap: 0 4px;
+  padding-top: 15px;
+}
 
 .btn_menu {position: relative;}
 .btn_menu span {position: absolute; width: 30px; height: 4px; border-radius: 3px; box-sizing: border-box; background-color: var(--complementary); transition: .3s; }
@@ -59,16 +64,23 @@ html,body {
   display: flex; 
   justify-content: space-between;
   align-items: center;
-  width: 220px; height: 100%; 
+  max-width: 220px; 
+  width: 100%; height: 100%; 
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
   border-radius: 30px;
   border: 1px solid rgba(255,255,255,1); background-color: var(--mode);}
 
-.dynamic_island .album_art {max-width: 26px; max-height: 26px; width: 100%; height: 100%; border-radius: 5px; background-color: #2C2C2C;background-image: url("/src/assets/images/icon/psy.png"); background-repeat: no-repeat; background-size: contain; background-position: center center; aspect-ratio: 1/1; overflow: hidden;}
-.dynamic_island .waveform {width: 26px; background-color: red; aspect-ratio: 2/1;}
-.dynamic_island.active .waveform {}
+.dynamic_island .album_art {width: 26px; height: 26px; border-radius: 5px; background-color: #2C2C2C;background-image: url("/src/assets/images/icon/psy.png"); background-repeat: no-repeat; background-size: contain; background-position: center center; overflow: hidden;}
+.dynamic_island .waveform {position: relative; width: 24px; height: 26px;}
+.dynamic_island .waveform .wave_line {position: absolute; top: 50%; width: 2px; height: 3px; border-radius: 5px; box-sizing: border-box; background-color: rgba(255,255,255,0.08); transform: translateY(-50%); }
+.dynamic_island .waveform .wave_line:nth-of-type(1) {left: 0px;}
+.dynamic_island .waveform .wave_line:nth-of-type(2) {left: 5px;}
+.dynamic_island .waveform .wave_line:nth-of-type(3) {left: 10px;}
+.dynamic_island .waveform .wave_line:nth-of-type(4) {left: 15px;}
+.dynamic_island .waveform .wave_line:nth-of-type(5) {left: 20px;}
+.dynamic_island .waveform .wave_line:nth-of-type(6) {left: 24px;}
 
 #audio {position: absolute; top: 0; left: 0; z-index: 100;}
 

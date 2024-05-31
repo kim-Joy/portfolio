@@ -8,6 +8,17 @@ const { Component } = require("react");
 
 class Header extends Component {
 
+  //load 
+  componentDidMount() {
+    const waveform = document.querySelector(".waveform");
+    for (let i = 0; i < 6; i++) {
+      const create_line = document.createElement('i');
+      create_line.className = 'wave_line';
+      waveform.appendChild(create_line);
+    }
+  }
+
+
   Menu = () => { 
     const header_bg = document.querySelector('.header');
     const nav = document.querySelector('.nav');
@@ -38,10 +49,24 @@ class Header extends Component {
     
     if(!audio.paused){
       audio.pause();
+      clearInterval(this.heightInterval);
     } else {
       audio.play();
+      this.heightInterval = setInterval(this.changeHeight, 500);
     }
+
   }
+
+  changeHeight = () => {
+  const wave_lines = document.querySelectorAll('.wave_line');
+   wave_lines.forEach(wave_line => {
+    const randomHeight = Math.floor(Math.random() * 23) + 3; 
+    wave_line.style.height = `${randomHeight}px`;
+  });
+  }
+
+
+  
 
   render() {
     return (
