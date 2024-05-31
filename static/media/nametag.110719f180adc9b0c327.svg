@@ -10,6 +10,7 @@
 <g filter="url(#filter1_d_74_50)">
 <rect x="142" y="11" width="10" height="248" fill="url(#paint4_linear_74_50)"/>
 </g>
+<rect x="142" y="250" width="10" height="5" fill="#B7C6AD"/>
 <defs>
 <filter id="filter0_d_74_50" x="150.279" y="0.343262" width="46.7911" height="253.137" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
