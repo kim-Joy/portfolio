@@ -7,6 +7,7 @@
 .intro:after{
   content: '';
   position: absolute; top: 0; left: 0;
+  z-index: -1;
   width: 100%; height: 100%;
   background-image: url('/src/assets/images/pages/start_small.svg'); 
   background-size: 28px 28px;
@@ -22,6 +23,7 @@
 .intro:before{
   content: '';
   position: absolute; top: 0; left: 0;
+  z-index: -1;
   width: 100%; height: 100%;
   background-image: url('/src/assets/images/pages/start_small.svg'); 
   background-size: 28px 28px;
@@ -46,20 +48,21 @@
   position: absolute; 
   top:0; left: 50%; 
   z-index: 100; 
-  max-width: 834px; 
   width: 100%; 
   display: grid; 
-  grid-template-columns: 380px auto; 
+  grid-template-columns: 380px 500px;
+  justify-content: center; 
   align-items: center; 
   gap: 0 20px;
-  margin-top: -122px; 
+  margin-top: -160px; 
   transform: rotateZ(-9deg) translateX(-50%);
+  transition: 1s;
 }
 
 .name_info_article {margin-top: 50%; color: var(--complementary);}
 .name_info_article > h3 {font-size: 1.666rem; font-weight: 700;}
 .name_info_article > h3 .icon_hand {display: inline-block; width: 30px; height: 30px; background-image: url("/src/assets/images/icon/hand.png"); background-repeat: no-repeat; background-size: contain; background-position:center center; vertical-align: sub; }
-.name_info_article > p {margin-top: 1.1em; font-size: 1.444rem; font-weight: 400; line-height: 2.1rem;}
+.name_info_article > p {margin-top: 1.1rem; font-size: 1.222rem; font-weight: 400; line-height: 2.1rem;}
 
 .name_info_tag {
   position: relative; 
@@ -95,7 +98,7 @@
   padding: 0 2em;
   box-sizing: border-box; 
 }
-.name_info_tag .info .info_face {background: url('/src/assets/images/memoji/fighting.svg') no-repeat center; background-size: contain; aspect-ratio: 3/2;}
+.name_info_tag .info .info_face {width: 100%; height: 100%; background: url('/src/assets/images/memoji/fighting.svg') no-repeat center; background-size: contain; aspect-ratio: 3/2;}
 .name_info_tag .info .info_txt {max-width: 320px; padding: 0 20px; }
 .name_info_tag .info_txt dl {
   display: flex;
@@ -110,7 +113,7 @@
 
 /* 배경
 =========================================== */
-.figure_around {position: absolute; top: 50%; left: 50%; max-width: 800px; width: 100%; aspect-ratio: 1/1; transform: translate(-50%, -50%);}
+.figure_around {position: absolute; top: 50%; left: 50%; max-width: 800px; width: 100%; aspect-ratio: 1/1; transform: translate(-50%, -50%); }
 
 .figure_portfolio {
   position: absolute; top: 6%; left: -240px; 
@@ -122,10 +125,11 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  transition: 1s;
 }
   
 .figure_bone {
-  position: absolute; top: -40px; left:30%;
+  position: absolute; top: -15%; left:30%;
   width: 500px; height: 400px;
   background-position: center center; 
   background-size: contain; 
@@ -166,7 +170,7 @@
   mask-size: contain;
 }
 .figure_start.blue {
-  position: absolute; top: 34%; left: -60px;
+  position: absolute; top: 34%; left: -90px;
   background-color: #4557FA;
   animation-name: glowing-stars;
   animation-duration: 2s;
@@ -184,6 +188,7 @@
   animation-direction: alternate;
   animation-timing-function: linear;
   animation-delay: 1.5s;
+  transition: 1s;
 }
 .figure_start.green {
   position: absolute;  top: -15px; right: 15px;
@@ -240,6 +245,7 @@
   mask-position: center center; 
   -webkit-mask-size: contain; 
   mask-size: contain;
+  transition: 1s;
 }
 .figure_oval {
   position: absolute; bottom: 9%; left: 7%;
@@ -254,16 +260,17 @@
   mask-position: center center; 
   -webkit-mask-size: contain; 
   mask-size: contain;
+  transition: 1s;
 }
 
 
-.weclome_group {position: absolute; bottom: 50px; right: 300px; }
-.weclome_group > div {position: relative; width: 325px; height: 334px;}
+.weclome_group {position: absolute; bottom: 50px; right: 10%; }
+.weclome_group > div {position: relative; width: 325px; height: 334px; transition: 1s;}
 .weclome_group:after {content: ''; position: absolute; top: 50%; left: 50%; z-index: 1; width: 100px; height: 100px; background-image: url("/src/assets/images/memoji/face_heart.svg"); background-repeat: no-repeat; background-size: contain; background-position: center center; transform: translate(-50%, -50%);}
 
 .weclome_sign {
   max-width: 325px; 
-  width: 100%; height: 334px;
+  width: 100%; height: 100%;
   background-color: var(--complementary);
   background-position: center center; 
   -webkit-mask-image: url("/src/assets/images/pages/weclome_sign.svg"); 
@@ -296,4 +303,62 @@
 
 
 
+
+/* ====================================
+ container query ~1200px
+==================================== */
+@container res-container (max-width: 1200px) {
+  .name_tag_group {grid-template-columns: 340px auto;}
+
+  /* 주위 효과 */
+  .figure_portfolio {width: 270px; height: 158px; left: -10%;}
+  .figure_start.purple {left: -5%;}
+  .figure_start.blue {left: 0; }
+  .weclome_group > div {width: 275px; height: 284px;}
+  .figure_start.green {top: -10px; width: 86px; height: auto; aspect-ratio: 1/2;}
+  
+}
+
+
+
+
+/* ====================================
+ container query ~912px
+==================================== */
+@container res-container (max-width: 912px) {
+  .name_tag_group {left: 0; margin-top: -15px; transform: none;}
+
+  
+}
+
+
+
+
+/* ====================================
+ container query ~740px
+==================================== */
+@container res-container (max-width: 740px) {
+  .name_tag_group {grid-template-columns: auto; margin-top: -100px;}
+  .name_info_article {margin-top: 2.222rem; }
+
+  /* 주위 효과 */
+  .figure_around {top: 0; transform: translateX(-50%);}
+  .figure_portfolio {width: 230px; height: 118px; left: 0;}
+  .weclome_group {bottom: -45px; right: 0; }
+  .weclome_group > div {width: 136px; height: 142px; }
+  .weclome_group:after {width: 50px; height: 50px;}
+  .figure_start.green {width: 42px; top: -20px;}
+}
+
+
+
+
+
+/* ====================================
+ container query  ~426px
+==================================== */
+@container res-container (max-width: 426px) { 
+  
+
+}
 

@@ -26,7 +26,8 @@ html,body {
   position: relative;
   width: 100vw; height: 100%;
   scroll-snap-align: start;
-  scroll-snap-stop: normal
+  scroll-snap-stop: normal;
+  overflow: hidden;
 }
 .fullpage_article:after {content: ''; clear: both; display: block; visibility: hidden;}
 
@@ -70,7 +71,7 @@ html,body {
   padding: 0 15px;
   box-sizing: border-box;
   border-radius: 30px;
-  border: 1px solid rgba(255,255,255,1); background-color: var(--mode);}
+  border: 2px solid rgba(255,255,255,0.08); background-color: var(--black); }
 
 .dynamic_island .album_art {width: 26px; height: 26px; border-radius: 5px; background-color: #2C2C2C;background-image: url("/src/assets/images/icon/psy.png"); background-repeat: no-repeat; background-size: contain; background-position: center center; overflow: hidden;}
 .dynamic_island .waveform {position: relative; width: 24px; height: 26px;}
@@ -119,7 +120,7 @@ html,body {
 /* gnb */
 .nav.active {display: block;}
 .nav {display: none; position: fixed; top: var(--hd_height); left: 0; z-index: 100; width: 100%; height: calc(100% - var(--hd_height)); background-color: var(--mode); }
-.gnb_category {position: absolute; top: calc(50% - var(--hd_height)); left: 50%; max-width: 500px; width: 100%; padding: 0 40px; box-sizing: border-box; transform: translate(-50%, -50%); }
+.gnb_category {position: absolute; top: 50%; left: 50%; max-width: 500px; width: 100%; margin-top: -80px; padding: 0 40px; box-sizing: border-box; transform: translate(-50%, -50%); }
 
 .gnb_category li + li {margin-top: 3.888rem}
 .gnb_category li .btn_category {position: relative; display: inline-block; padding-right: 3.888rem; background-repeat: no-repeat; background-size: 2.777rem auto; background-position: right center; color: var(--complementary); font-family: 'Lacquer'; font-size: 2.777rem; text-align: left; transition: 1s;}

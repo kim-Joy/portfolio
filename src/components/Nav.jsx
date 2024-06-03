@@ -13,6 +13,8 @@ const nav_catrgory = [
 
 const scrollToSection = (id) => {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  document.querySelector('.header').classList.remove('on');
+  document.querySelector('.btn_menu').classList.remove('on'); 
   document.querySelector('.nav').classList.remove('active');
   const name_tag_animation = document.querySelector('.name_info_tag');
   

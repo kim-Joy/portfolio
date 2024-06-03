@@ -5,6 +5,7 @@ const { Component } = require("react");
 
 
 class Result extends Component {
+
   
   render() {
     return (

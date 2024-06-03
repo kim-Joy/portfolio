@@ -3,7 +3,7 @@
   width: 100%;
   z-index: 1;
   display: grid; 
-  grid-template-columns: 500px 375px;
+  grid-template-columns: auto 375px;
   align-items: center;
   align-content: space-between;
   justify-content: center;
@@ -24,3 +24,44 @@
 .myself .bubble:first-of-type {padding: 24px 40px 24px 60px; }
 .myself .bubble.blur span{filter: blur(3.2px);}
 .myself .bubble_tail:after{bottom: -10px; right: 15px; }
+
+
+
+
+
+/* ====================================
+ container query ~1200px
+==================================== */
+@container res-container (max-width: 1200px) {
+  .myself .pos_center {grid-template-columns: auto 275px;}
+  .myself_memoji .memoji {display: block; max-width: 100%; width: 100%; height: 100%; }
+}
+
+
+
+
+
+/* ====================================
+ container query ~689px
+==================================== */
+@container res-container (max-width: 689px) {
+  .myself .pos_center {
+    align-items: stretch;
+    grid-template-columns: auto;
+    grid-template-rows: auto 180px;
+  }
+}
+
+
+
+
+
+/* ====================================
+ container query ~482px
+==================================== */
+@container res-container (max-width: 482px) {
+  /* .myself_memoji .memoji {width: 50%; margin: 0 auto;} */
+}
+
+
+
