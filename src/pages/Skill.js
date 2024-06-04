@@ -49,6 +49,8 @@ class Skill extends Component {
             ))}
           </ul>
         </div>
+        <div className="gradient_line">
+        </div>
       </article>
     );
   }

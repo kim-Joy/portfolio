@@ -39,8 +39,6 @@
 
 
 
-
-
 /* 명찰 + 텍스트
 =========================================== */
 
@@ -295,7 +293,7 @@
 
 
 /* 그라데이션 라인 */
-.gradation_line {position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; background-repeat: repeat-x; background-image:url('/src/assets/images/common/gradation_line.svg'); background-size: 100% auto; background-position: left center; }
+.gradation_line {position: absolute; bottom: 0; left: 0; z-index: -1; width: 100%; height: 97px; background-repeat: repeat-x; background-image:url('/src/assets/images/common/gradation_line.svg'); background-size: 100% auto; background-position: left center; }
 
 
 

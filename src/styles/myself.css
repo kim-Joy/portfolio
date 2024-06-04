@@ -25,7 +25,21 @@
 .myself .bubble.blur span{filter: blur(3.2px);}
 .myself .bubble_tail:after{bottom: -10px; right: 15px; }
 
+.myself_memoji .memoji {animation: twist 4s linear infinite;}
 
+
+@keyframes twist{
+  0% {
+      transform: rotateY(0deg) rotateZ(0deg);
+    }
+  50% {
+    transform: rotateY(35deg) rotateZ(-15deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
 
 
 

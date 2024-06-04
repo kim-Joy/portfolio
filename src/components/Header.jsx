@@ -11,6 +11,7 @@ class Header extends Component {
   //load 
   componentDidMount() {
     const waveform = document.querySelector(".waveform");
+
     for (let i = 0; i < 6; i++) {
       const create_line = document.createElement('i');
       create_line.className = 'wave_line';
@@ -89,7 +90,7 @@ class Header extends Component {
                 <span className="waveform"></span>
             </button>
             <p className="visuallyhidden">음악 재생/정지</p>
-            <audio controls autoplay="autoplay" className="visuallyhidden" id="audio">
+            <audio controls className="visuallyhidden" id="audio">
               <source src={music} type="audio/mpeg" ></source>
             </audio>
           </div>

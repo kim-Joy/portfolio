@@ -125,13 +125,15 @@ html,body {
 .gnb_category li + li {margin-top: 3.888rem}
 .gnb_category li .btn_category {position: relative; display: inline-block; padding-right: 3.888rem; background-repeat: no-repeat; background-size: 2.777rem auto; background-position: right center; color: var(--complementary); font-family: 'Lacquer'; font-size: 2.777rem; text-align: left; transition: 1s;}
 .gnb_category li.category_intro .btn_category {background-image: url("/src/assets/images/icon/hand.png");}
-.gnb_category li.category_myself .btn_category {background-image: url("/src/assets/images/memoji/my.svg");}
+.gnb_category li.category_myself .btn_category {background-image: url("/src/assets/images/memoji/smile.svg");}
 .gnb_category li.category_skill .btn_category {background-image: url("/src/assets/images/icon/skill.png");}
 .gnb_category li.category_game .btn_category {background-image: url("/src/assets/images/icon/balance.png");}
+.gnb_category li.category_finish .btn_category {background-image: url("/src/assets/images/icon/bye.png");}
 
 .gnb_category li:hover .btn_category:before {content:''; position: absolute; bottom: 0; left: 0; width: calc(100% - 3.888rem); height: 30%; opacity: 0.5;}
 
 .gnb_category .category_intro .btn_category:before {background-color: var(--purple);}
-.gnb_category .category_myself .btn_category:before {background-color: var(--pink);}
-.gnb_category .category_skill .btn_category:before {background-color: var(--blue);}
+.gnb_category .category_skill .btn_category:before {background-color: var(--pink);}
+.gnb_category .category_myself .btn_category:before {background-color: var(--blue);}
 .gnb_category .category_game .btn_category:before {background-color: var(--green);}
+.gnb_category .category_finish .btn_category:before {background-color: red}
