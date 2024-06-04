@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.192f57a7.css",
-    "main.js": "/portfolio/static/js/main.22258287.js",
+    "main.css": "/portfolio/static/css/main.fde28b0a.css",
+    "main.js": "/portfolio/static/js/main.b988e933.js",
     "static/media/celeb.mp4": "/portfolio/static/media/celeb.d9807ee156ecedc6022a.mp4",
     "static/media/Pretendard-Thin.ttf": "/portfolio/static/media/Pretendard-Thin.23965237737042c7c087.ttf",
     "static/media/Pretendard-ExtraLight.ttf": "/portfolio/static/media/Pretendard-ExtraLight.3a1f8545bfb6498f1f14.ttf",
@@ -34,14 +34,14 @@
     "static/media/Pretendard-ExtraLight.woff2": "/portfolio/static/media/Pretendard-ExtraLight.6a3dddfd84c05761ef44.woff2",
     "static/media/Pretendard-Thin.woff2": "/portfolio/static/media/Pretendard-Thin.bb7cedf4446fa24dda9d.woff2",
     "static/media/LOTTERIACHAB.woff": "/portfolio/static/media/LOTTERIACHAB.60ecfec517d9238ece93.woff",
+    "static/media/smile.svg": "/portfolio/static/media/smile.be497a4e183309a694d6963cc91f9c60.svg",
     "static/media/LOTTERIACHAB.woff2": "/portfolio/static/media/LOTTERIACHAB.2a9db743422ee5d966d6.woff2",
     "static/media/Lacquer-Regular.ttf": "/portfolio/static/media/Lacquer-Regular.8c2474231c86ae3d4663.ttf",
     "static/media/heart.svg": "/portfolio/static/media/heart.3961d30fedeec90ae69fa565bb47f536.svg",
     "static/media/Lacquer-Regular.woff": "/portfolio/static/media/Lacquer-Regular.9d5a2c92fa181758afcf.woff",
     "static/media/computer.svg": "/portfolio/static/media/computer.f8d1534b22f47878d372d085f4908367.svg",
-    "static/media/my.svg": "/portfolio/static/media/my.5019212114bb52501758.svg",
     "static/media/v.svg": "/portfolio/static/media/v.5019212114bb52501758b3efd729970d.svg",
-    "static/media/fighting.svg": "/portfolio/static/media/fighting.ee5680398194bc1a60dabd2eaf0878c6.svg",
+    "static/media/fighting.svg": "/portfolio/static/media/fighting.ee5680398194bc1a60da.svg",
     "static/media/Lacquer-Regular.woff2": "/portfolio/static/media/Lacquer-Regular.f33be84238bdb4e594b4.woff2",
     "static/media/face_heart.svg": "/portfolio/static/media/face_heart.a25c66f74c2ba5bdaf8e.svg",
     "static/media/Koulen-Regular.ttf": "/portfolio/static/media/Koulen-Regular.e23002c698c2632e9437.ttf",
@@ -63,6 +63,7 @@
     "static/media/sun.svg": "/portfolio/static/media/sun.5c8c9c71e5a9e00aeb81.svg",
     "index.html": "/portfolio/index.html",
     "static/media/skill_figma.svg": "/portfolio/static/media/skill_figma.6d9dc6330f0cb8abb662.svg",
+    "static/media/gradation_line_v.svg": "/portfolio/static/media/gradation_line_v.4902f2de62e3efa2decf.svg",
     "static/media/gradation_line.svg": "/portfolio/static/media/gradation_line.99ead4c3000a6026a694.svg",
     "static/media/skill_ai.svg": "/portfolio/static/media/skill_ai.4746dcccd2b1d21c2376.svg",
     "static/media/blasting.svg": "/portfolio/static/media/blasting.2580b289a629102bca97.svg",
@@ -71,11 +72,11 @@
     "static/media/skill_css.svg": "/portfolio/static/media/skill_css.25b6606f71187d34ee20.svg",
     "static/media/skill_html.svg": "/portfolio/static/media/skill_html.a45fc65b2667def83742.svg",
     "static/media/bubble_tail.svg": "/portfolio/static/media/bubble_tail.6e15617445216c1cca89.svg",
-    "main.192f57a7.css.map": "/portfolio/static/css/main.192f57a7.css.map",
-    "main.22258287.js.map": "/portfolio/static/js/main.22258287.js.map"
+    "main.fde28b0a.css.map": "/portfolio/static/css/main.fde28b0a.css.map",
+    "main.b988e933.js.map": "/portfolio/static/js/main.b988e933.js.map"
   },
   "entrypoints": [
-    "static/css/main.192f57a7.css",
-    "static/js/main.22258287.js"
+    "static/css/main.fde28b0a.css",
+    "static/js/main.b988e933.js"
   ]
 }
