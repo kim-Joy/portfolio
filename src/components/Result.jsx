@@ -1,7 +1,5 @@
 import {Link} from 'react-router-dom';
-
 const { Component } = require("react");
-
 
 
 class Result extends Component {
@@ -33,3 +31,4 @@ class Result extends Component {
 }
 
 export default Result;
+

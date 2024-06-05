@@ -20,6 +20,11 @@ const skill_item_tool = [
 
 
 class Skill extends Component {
+
+  componentDidMount() {
+    const skill_bubble = document.querySelector('.skill_memoji .bubble');
+    skill_bubble.classList.add('on');
+  }
   
   render() {
     return (
@@ -48,8 +53,6 @@ class Skill extends Component {
               </li>
             ))}
           </ul>
-        </div>
-        <div className="gradient_line">
         </div>
       </article>
     );

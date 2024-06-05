@@ -16,12 +16,17 @@ const scrollToSection = (id) => {
   document.querySelector('.header').classList.remove('on');
   document.querySelector('.btn_menu').classList.remove('on'); 
   document.querySelector('.nav').classList.remove('active');
+  
   const name_tag_animation = document.querySelector('.name_info_tag');
+  const skill_bubble = document.querySelector('.skill_memoji .bubble');
   
   if(id === 'intro'){
     name_tag_animation.classList.add('on');
+  } else if (id === 'skill') {
+    skill_bubble.classList.add('on');
   } else {
     name_tag_animation.classList.remove('on');
+    skill_bubble.classList.remove('on');
   }
 };
 
