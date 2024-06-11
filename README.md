@@ -2,6 +2,8 @@
 🖥️ Web Publisher 
 
 update 2024
+https://kim-joy.github.io/portfolio/
+
 
 ================================================================================
 ## Portfolio
@@ -60,6 +62,7 @@ UIUX Tool : Photo Shop, Illustratorst, Figma, Adboe XD, Zeplin,
   - 작업 기간 : 퍼블리싱 
   - 언어 : HTML, CSS, JS
   - 산출물 : 
+
 2. dubuck 
   - 두벅이라는 이름으로 걸으면서 공부하는 영단어 프로젝트.
   - 담당 업무 : PM 
@@ -71,3 +74,14 @@ UIUX Tool : Photo Shop, Illustratorst, Figma, Adboe XD, Zeplin,
 
 ## Notion 
 개인 공부 및 작업을 진행하면서 알게 된 정보 또는 공부한 내용들을 정리한 노션 리스트 입니다.
+
+1. TIL (Today I Learned)
+'나는 오늘 공부했다'는 의미로 디자인 및 코딩 관련해서 작업 진행을 하면서 알게 된 내용을 정리하는 기록지. 
+지금은 나의 스타일 기록 보다 내용을 기억하기 위한 기록에 치중되어 있어서, 추후에는 Vlog.io 같은 IT블로그 작업을 위한 습관들이기로 시작하고 있다.
+
+URL : 
+
+2. 포트폴리오 노션
+노꾸를 좋아하기 때문에 회사에서 작업한 산출물에 대한 기여도는 노션으로 정리해보았다.
+
+URL : 

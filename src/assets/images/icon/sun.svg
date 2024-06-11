@@ -1,11 +1,11 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="12" cy="11.9998" r="6.2" stroke="black" stroke-width="2"/>
-<line x1="12.2" x2="12.2" y2="3.2" stroke="black" stroke-width="2"/>
-<line x1="12.2" y1="20.7998" x2="12.2" y2="23.9998" stroke="black" stroke-width="2"/>
-<line x1="24" y1="13" x2="20.8" y2="13" stroke="black" stroke-width="2"/>
-<line x1="3.19995" y1="13" x2="-4.89195e-05" y2="13" stroke="black" stroke-width="2"/>
-<line x1="19.7782" y1="21.1925" x2="17.5155" y2="18.9297" stroke="black" stroke-width="2"/>
-<line x1="5.07048" y1="6.48445" x2="2.80774" y2="4.22171" stroke="black" stroke-width="2"/>
-<line x1="3.60783" y1="20.578" x2="5.87058" y2="18.3153" stroke="black" stroke-width="2"/>
-<line x1="18.3156" y1="5.87004" x2="20.5783" y2="3.6073" stroke="black" stroke-width="2"/>
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="15" cy="15" r="5" stroke="black" stroke-width="2"/>
+<line x1="15" y1="4" x2="15" y2="6.93333" stroke="black" stroke-width="2"/>
+<line x1="15" y1="23.0664" x2="15" y2="25.9997" stroke="black" stroke-width="2"/>
+<line x1="26" y1="15" x2="23.0667" y2="15" stroke="black" stroke-width="2"/>
+<line x1="6.93335" y1="15" x2="4.00002" y2="15" stroke="black" stroke-width="2"/>
+<line x1="23.0712" y1="22.4854" x2="20.997" y2="20.4112" stroke="black" stroke-width="2"/>
+<line x1="9.58904" y1="9.00301" x2="7.51486" y2="6.92883" stroke="black" stroke-width="2"/>
+<line x1="7.24822" y1="22.8041" x2="9.3224" y2="20.7299" stroke="black" stroke-width="2"/>
+<line x1="20.7304" y1="9.3217" x2="22.8046" y2="7.24752" stroke="black" stroke-width="2"/>
 </svg>
