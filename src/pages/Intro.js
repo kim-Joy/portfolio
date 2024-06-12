@@ -1,6 +1,6 @@
+import { Component } from "react";
 import 'styles/intro.css';
 
-const { Component } = require("react");
 
 
 

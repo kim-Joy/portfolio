@@ -1,9 +1,7 @@
+import { Component } from "react";
 import 'styles/myself.css';
 
 import Memoji_smile from 'assets/images/memoji/smile.svg';
-
-const { Component } = require("react");
-
 
 
 class Myself extends Component {

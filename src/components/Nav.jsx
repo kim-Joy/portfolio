@@ -1,6 +1,6 @@
 
-
-const { Component } = require("react");
+import { Component } from "react";
+import { Link } from "react-router-dom";
 
 const nav_catrgory = [
   {key: "1", class: "intro", title: "intro", to: '/Intro'},
@@ -61,10 +61,16 @@ class Nav extends Component {
     });
   };
 
-  render() {
+  render(props) {
     return (
       <div className="nav">
-        <button type="button"><span></span></button>
+          {
+          this.menu === true ? 
+            <button type="button"><span></span></button> : 
+            <Link to="/FullPage" className="btn_back">
+              <span className="visuallyhidden">뒤로가기</span>
+            </ Link>  
+          }
         <nav className="gnb_category"> 
           <ol>
             {nav_catrgory.map((item) =>(

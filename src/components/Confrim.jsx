@@ -1,6 +1,6 @@
+import { Component } from "react";
 import "styles/confirm.css"
 
-const { Component } = require("react");
 
 class Confrim extends Component {
   render() {

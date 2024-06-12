@@ -9,7 +9,8 @@ const balance_answer_item = [
 ];
 
 const Banlance = () => {
-  const [currentIndex, setCurrentIndex] = useState();
+  
+  const [currentIndex, setCurrentIndex] = useState(0);
   const navigate = useNavigate();
 
   const handleInputChange = (event) => {
@@ -24,16 +25,15 @@ const Banlance = () => {
       const TOTAL_SCORE = parseInt(KEY_ITEM01) + parseInt(KEY_ITEM02) + parseInt(KEY_ITEM03);
       console.log('total ' + TOTAL_SCORE);
 
-      // Navigate to different pages based on TOTAL_SCORE
       if (TOTAL_SCORE >= 25) {
         console.log('결과페이지 1');
-        navigate('/Result');
+        navigate("/ResultHight");
       } else if (TOTAL_SCORE >= 15) {
-        console.log('결과페이지 2'); // Medium score page
-        navigate('/medium-score-page');
+        console.log('결과페이지 2'); 
+        navigate('/ResultMedium');
       } else {
-        console.log('결과페이지 3'); // Low score page
-        navigate('/low-score-page');
+        console.log('결과페이지 3');
+        navigate('/ResultLow');
       }
     } else {
       setCurrentIndex(nextIndex);

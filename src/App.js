@@ -2,7 +2,9 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Fullpage from 'pages/Fullpage';
-import Result from 'components/Result';
+import ResultHight from 'pages/ResultHight';
+import ResultMedium from 'pages/ResultMedium';
+import ResultLow from 'pages/ResultLow';
 import NotFound from "pages/NotFound";
 
 import "styles/import.css";
@@ -14,7 +16,9 @@ function App() {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Fullpage/>}></Route>
-          <Route path="/Result" element={<Result/>}></Route>
+          <Route path="/ResultHight" element={<ResultHight/>}></Route>
+          <Route path="/ResultMedium" element={<ResultMedium/>}></Route>
+          <Route path="/ResultLow" element={<ResultLow/>}></Route>
           <Route path="/*" element={<NotFound/>}></Route>
         </Routes>
       </BrowserRouter>

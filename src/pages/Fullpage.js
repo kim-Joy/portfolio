@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import Header from 'components/Header';
 import Intro from 'pages/Intro';
 import Skill from 'pages/Skill';
@@ -6,6 +5,8 @@ import Myself from 'pages/Myself';
 import Game from 'pages/Game';
 import Finish from 'pages/Finish';
 
+
+const { Component } = require("react");
 
 class Fullpage extends Component {
 

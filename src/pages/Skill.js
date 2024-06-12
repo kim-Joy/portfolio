@@ -1,8 +1,8 @@
+import { Component } from "react";
 import 'styles/skill.css';
 
 import Memoji_computer from 'assets/images/memoji/computer.svg';
 
-const { Component } = require("react");
 const skill_item_coding = [
   {key: "1", class: "html", title: "HTML"},
   {key: "2", class: "css", title: "CSS"},
