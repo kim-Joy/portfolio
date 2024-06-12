@@ -1,5 +1,6 @@
+import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-const { Component } = require("react");
+import Header from 'components/Header';
 
 
 class Result extends Component {
@@ -7,7 +8,9 @@ class Result extends Component {
   
   render() {
     return (
-      <section className="result"> 
+      <div>
+        <Header />
+        <section className="result"> 
         <div>
           미모지
         </div>
@@ -26,6 +29,8 @@ class Result extends Component {
           </div>
         </div>
       </section>
+      </div>
+     
     );
   }
 }
