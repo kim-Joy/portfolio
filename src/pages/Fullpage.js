@@ -27,7 +27,9 @@ class Fullpage extends Component {
     const { numberOfDivs } = this.state;
     return (
       <div className="fullpage">
-        <Header />
+        <Header 
+          menu = {true}
+        />
         <div className="fullpage_X">
           <div className="fullpage_article" style={{'width': `${numberOfDivs * 100}%`}}>
             <Intro />

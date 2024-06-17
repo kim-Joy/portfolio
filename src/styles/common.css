@@ -1,3 +1,28 @@
+/* =====================================
+  common
+=======================================*/
+
+::-moz-selection {
+  background-color: var(--green);
+  color: #fff;
+}
+::selection {
+  background-color: var(--green);
+  color: #fff;
+}
+
+.pos_center {
+  z-index: 1;
+  width: 100%;
+  display: grid;
+  align-content: space-between;
+  justify-content: center;
+  justify-items: stretch;
+  padding: 0 20px; 
+  box-sizing: border-box;
+  transition: 1s;
+}
+
 .visuallyhidden {
   position: absolute; 
   width: 1px;
@@ -9,14 +34,6 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
-.pos_center {
-  position: absolute; 
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 
 .bubble {position: relative; box-sizing: border-box; padding: 20px 20px; border-radius: 80px;}
 .bubble_tail:after {

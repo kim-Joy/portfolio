@@ -1,6 +1,6 @@
 
-import { Component } from "react";
-import { Link } from "react-router-dom";
+
+const { Component } = require("react");
 
 const nav_catrgory = [
   {key: "1", class: "intro", title: "intro", to: '/Intro'},
@@ -44,7 +44,7 @@ class Nav extends Component {
 
   handleIntersection = (entries) => {
     const name_tag_animation = document.querySelector('.name_info_tag');
-    const skill_bubble = document.querySelector('.skill_memoji .bubble');
+    const skill_bubble = document.querySelector('.bubble_group');
     
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -61,16 +61,10 @@ class Nav extends Component {
     });
   };
 
-  render(props) {
+  render() {
     return (
       <div className="nav">
-          {
-          this.menu === true ? 
-            <button type="button"><span></span></button> : 
-            <Link to="/FullPage" className="btn_back">
-              <span className="visuallyhidden">뒤로가기</span>
-            </ Link>  
-          }
+        <button type="button"><span></span></button>
         <nav className="gnb_category"> 
           <ol>
             {nav_catrgory.map((item) =>(

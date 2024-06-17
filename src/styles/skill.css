@@ -1,20 +1,15 @@
-
-.skill {}
+/* ====================================
+ skill
+==================================== */
 .skill:after {content:''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('/src/assets/images/common/fishbone.svg'); background-position: center; background-size: 70%; background-repeat: no-repeat; filter: blur(2px); }
+.skill:before {content: ''; position: absolute; bottom: 5%; left: 0; width: 100%; height: 97px; background-image: url("/src/assets/images/common/gradation_line_v.svg"); background-repeat: repeat-x; background-position: left center; background-size: 100% auto; transform: rotate(180deg); animation-name: wave_line; animation-duration: 2s; animation-iteration-count: infinite;}
 
 .skill .pos_center {
-  z-index: 1;
-  display: grid; 
-  width: 100%; 
+  position: relative;
   grid-template-columns: 80px auto 80px;
   align-items: end;
-  align-content: space-between;
-  justify-content: center;
-  justify-items: stretch;
   gap: 0 20px;
-  padding: 0 40px;
-  box-sizing: border-box;
-  transition: 1s;
+
 }
 
 .skill_item_group {
@@ -100,11 +95,11 @@
   mask-size: 70%;
 } 
 
-.skill_memoji {position: relative; }
-.skill_memoji .bubble {
-  display: block; 
-  position: absolute;
-  top: -100px; left: 0;
+
+
+.skill .bubble_group {position: absolute; top : -20px; left: 50%; max-width: 337px; width: 100%; transform: translateX(-50%);} 
+.skill .bubble {
+  display: block;
   width: 100%; 
   background-color: var(--pink); font-size: 1.333rem; 
   font-family: 'LOTTERIACHAB'; font-weight: normal; 
@@ -112,16 +107,16 @@
   text-align: center; 
   text-shadow: 0px 7px 4px rgba(0,0,0,0.25); 
 }
-.skill_memoji .bubble.on {  
+.skill .bubble_group.on {  
   animation-name: pos;
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
 }
 
-.skill_memoji .bubble_tail:after {bottom: -16px; left: 40px; transform: rotate(22deg);}
+.skill .bubble_tail:after {bottom: -16px; left: 40px; transform: rotate(22deg);}
 
-.skill_memoji .bubble > .icon_skill {display: inline-block; width: 24px; height: 24px; margin-left: 2px; background-image: url("/src/assets/images/icon/skill.png"); background-repeat: no-repeat; background-size: contain; background-position:center center; vertical-align: sub;}
+.skill .bubble > .icon_skill {display: inline-block; width: 24px; height: 24px; margin-left: 2px; background-image: url("/src/assets/images/icon/skill.png"); background-repeat: no-repeat; background-size: contain; background-position:center center; vertical-align: sub;}
 
 @keyframes pos {
   0% {
@@ -132,9 +127,8 @@
   } 
 }
 
-.skill:before {content: ''; position: absolute; bottom: 5%; left: 0; width: 100%; height: 97px; background-image: url("/src/assets/images/common/gradation_line_v.svg"); background-repeat: repeat-x; background-position: left center; background-size: 100% auto; transform: rotate(180deg); animation-name: wave_line; animation-duration: 2s; animation-iteration-count: infinite;}
-
-
+.skill_memoji {width: 100%; height: 100%;}
+.skill_memoji .memoji {display: block; max-width: 100%;}
 
 
 
@@ -143,7 +137,6 @@
 ==================================== */
 @container res-container (max-width: 740px) {
   .skill .pos_center {grid-template-columns: 50px auto 50px;}
-  .skill_memoji .memoji {display: block; max-width: 100%; width: 100%; height: 100%; }
 }
 
 

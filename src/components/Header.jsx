@@ -1,5 +1,5 @@
 import { Component } from "react";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Nav from "components/Nav"
 
 import music from 'assets/music/celeb.mp4';
@@ -7,6 +7,7 @@ import music from 'assets/music/celeb.mp4';
 
 
 class Header extends Component {
+
 
   //load 
   componentDidMount() {
@@ -70,6 +71,8 @@ class Header extends Component {
   
 
   render() {
+    const { menu } = this.props;
+
     return (
       <div className="header">
         <div className="skipNav">
@@ -78,12 +81,17 @@ class Header extends Component {
         </div>
         <h1 className="visuallyhidden">logo</h1>
         <header className="header_gnb">
+         {menu === true ? 
           <button type="button" className="btn_menu" onClick={this.Menu}>
               <p className="visuallyhidden">메뉴</p>
               <span></span>
               <span></span>
               <span></span>
-          </button>
+          </button> : 
+          <Link to="/" className="btn_back">
+            <span></span>
+        </ Link>  
+         }
           <div className="dynamic_island">
             <button type="button" className="btn_island" onClick={this.player}>
                 <span className="album_art"></span>

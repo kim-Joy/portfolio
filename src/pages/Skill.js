@@ -21,10 +21,6 @@ const skill_item_tool = [
 
 class Skill extends Component {
 
-  componentDidMount() {
-    const skill_bubble = document.querySelector('.skill_memoji .bubble');
-    skill_bubble.classList.add('on');
-  }
   
   render() {
     return (
@@ -38,12 +34,15 @@ class Skill extends Component {
               </li>
             ))}
           </ul>
-          <div className="skill_memoji">
-            <p className="bubble bubble_tail">나의 스킬이 궁금하다고?</p>
-            <img src={Memoji_computer} className="memoji" alt="노트북 보는 미모지" />
-            <button type="button" className="bubble" style={{'display': 'none'}}>
+          <div className="bubble_group">
+          <p className="bubble bubble_tail" >나의 스킬이 궁금하다고?</p >
+          <button type="button" className="bubble" style={{'display': 'none'}}>
               내가 보유하고 있는 스킬<i className="icon_skill"></i>
             </button>
+          </div>
+          <div className="skill_memoji">
+            <img src={Memoji_computer} className="memoji" alt="노트북 보는 미모지" />
+            
           </div>
           <ul className="skill_item_group">
             {skill_item_tool.map((item) =>(

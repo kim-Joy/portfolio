@@ -1,9 +1,11 @@
+/* ====================================
+ intro
+==================================== */
 .intro {
   position: relative; 
   container-name: res-container; 
   container-type: inline-size;
 }
-
 .intro:after{
   content: '';
   position: absolute; top: 0; left: 0;
@@ -39,9 +41,8 @@
 
 
 
-/* 명찰 + 텍스트
-=========================================== */
-
+/* name_tag_group //명찰 + 텍스트 
+================================= */
 .name_tag_group {
   position: absolute; 
   top: 5%; left: 50%; 
@@ -56,7 +57,6 @@
   transform: rotateZ(-9deg) translate(-50%);
   transition: 1s;
 }
-
 .name_info_article {color: var(--complementary);}
 .name_info_article > h3 {font-size: 1.666rem; font-weight: 700;}
 .name_info_article > h3 .icon_hand {display: inline-block; width: 30px; height: 30px; background-image: url("/src/assets/images/icon/hand.png"); background-repeat: no-repeat; background-size: contain; background-position:center center; vertical-align: sub; }
@@ -70,8 +70,6 @@
   background-position: bottom center; 
   aspect-ratio: 3 /4; 
 }
-
-
 .name_info_tag.on {
   animation-name: swing;
   animation-duration: 2s;
@@ -149,8 +147,8 @@
 .name_info_tag .info_txt dl > dd {flex-basis: calc(100% - 60px); padding: 0 2px; box-sizing: border-box; border-bottom: 1px solid rgba(40, 77, 17, 0.5); font-size: 1rem; font-weight: 400; }
 
 
-/* 배경
-=========================================== */
+/* 배경 아이콘
+================================= */
 .figure_around {position: absolute; top: 50%; left: 50%; max-width: 800px; width: 100%; aspect-ratio: 1/1; transform: translate(-50%, -50%); }
 
 .figure_portfolio {

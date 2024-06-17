@@ -9,7 +9,7 @@ class Game extends Component {
     return (
       <article className="balance_game" id="game"> 
         <div className="pos_center">
-          <div className="game_memoji">
+          <div className="balance_memoji">
             <img src={Memoji_v} className="memoji" alt="브이하는 미모지" />
           </div>
           <Balance />
