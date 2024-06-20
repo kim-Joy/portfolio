@@ -20,7 +20,7 @@ class ResultHight extends Component {
             </h3>
             <p className="summary">나를 못알아봐?</p>
             <div className="btn_bottom_group">
-              <Link to="/" className="btn fill_pink">프로젝트 기여도</Link>
+              <Link to="/Resume" className="btn fill_pink">프로젝트 기여도</Link>
               <Link to="/" className="btn fill_purple">자기개발 문서관리</Link>
             </div>
           </div>

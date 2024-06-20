@@ -6,6 +6,7 @@ import ResultHight from 'pages/ResultHight';
 import ResultMedium from 'pages/ResultMedium';
 import ResultLow from 'pages/ResultLow';
 import NotFound from "pages/NotFound";
+import Resume from "notion/pages/Resume";
 
 import "styles/import.css";
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/ResultHight" element={<ResultHight/>}></Route>
           <Route path="/ResultMedium" element={<ResultMedium/>}></Route>
           <Route path="/ResultLow" element={<ResultLow/>}></Route>
+          <Route path="/Resume" element={<Resume/>}></Route>
           <Route path="/*" element={<NotFound/>}></Route>
         </Routes>
       </BrowserRouter>
