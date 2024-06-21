@@ -9,7 +9,7 @@ function Resume() {
 
 
   return(
-     <div className="resume">
+     <div className="resume list">
         <article className="info">
             <h1>Welcome to Joy Portfolio💛</h1>
             <div className="grid">
@@ -76,7 +76,7 @@ function Resume() {
             <h2 className="h2">👩‍💻 만들어 봤어요.</h2>
             <ul className="card-list">
                <li>
-                  <Link>
+                  <Link to="/Detail">
                   <div 
                   className="thumb"></div>
                   <div className="info">
