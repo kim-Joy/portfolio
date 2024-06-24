@@ -1,8 +1,12 @@
 import { Component } from "react";
 import { Link } from 'react-router-dom';
+
+import "styles/import.css";
+
 import Nav from "components/Nav"
 
 import music from 'assets/music/celeb.mp4';
+
 
 
 

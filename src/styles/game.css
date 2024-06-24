@@ -55,7 +55,9 @@
   justify-items: center;
   height: 100vh;
 }
-.result_details .txt_group .title {font-size: 2.222rem; color: var(--complementary);}
+.result_details .txt_group .title {margin-bottom: 2.388rem; font-size: 2.222rem; color: var(--complementary); line-height: 1.1;}
+.result_details .txt_group .summary {margin-bottom: 3.333rem; font-size: 1.777rem; color: var(--complementary); }
+.result_details  .btn_bottom_group .pre {}
 
 .result_details  .btn_bottom_group {display: flex; flex-wrap: wrap; margin-top: 3.611rem;}
 .result_details  .btn_bottom_group .btn {padding: 7px 24px; box-sizing: border-box; border-radius: 30px; font-size: 1.333rem; color: var(--white); font-family: 'LOTTERIACHAB'; } 

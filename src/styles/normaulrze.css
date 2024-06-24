@@ -2,8 +2,6 @@
 /* ====================================
  normaulrze
 ==================================== */
-
-body { font-family: 'Noto Sans KR', sans-serif; } 
 select { appearance:none;} 
 select::-ms-expand { display:none;}
 input[type="search"]::-webkit-search-decoration,
