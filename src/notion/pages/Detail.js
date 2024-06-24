@@ -7,8 +7,8 @@ import { useDataContext } from '../components/DataContext';
 const importAll = (r) => r.keys().map(r);
 const images = importAll(require.context('notion/assets/outputs', false, /laptop_\d+\.png$/));
 
-const thumbsAll = (r) => r.keys().map(r);
-const thumbs = thumbsAll(require.context('notion/assets/outputs', false, /phone_\d+\.png$/));
+const thumbs = importAll(require.context('notion/assets/outputs', false, /phone_\d+\.png$/));
+const details = importAll(require.context('notion/assets/outputs', false, /detail_\d+\.png$/));
  
 function Detail() {
   const { id } = useParams();
@@ -69,15 +69,15 @@ function Detail() {
       </div>
       <div className="body">
         <div className="full">
-          <div className={`thumb thumb_${item.key}`} style={{ backgroundImage: `url(${images[item.key - 1]})` }}></div>
+          <img className="detail_thumb" src={`${images[item.key - 1]}`} alt="피씨 목업" />
         </div>
         <div className="half">
           <div>
-           <div className={`thumb thumb_${item.key}`} style={{ backgroundImage: `url(${thumbs[item.key - 1]})` }}></div>
+           <img className="detail_thumb" src={`${thumbs[item.key - 1]}`} alt="모바일 목업" />
             <ul className="detail-txt-list"></ul>
           </div>
           <div>
-            sssssssssssss디테일
+            <img className="detail_thumb" src={`${details[item.key - 1]}`} alt="상세 이미지" />
           </div>
         </div>
       </div>

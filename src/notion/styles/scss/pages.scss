@@ -112,15 +112,6 @@
     padding-top: 20px;
     border-top: 1px solid $gray;
 
-    .thumb {
-      aspect-ratio: 1/1;
-      background: {
-        repeat: no-repeat;
-        size: contain;
-        position: center center;
-      }
-      
-    }
     .half {
       display: grid;
       grid-template-columns: 1fr 1fr;
