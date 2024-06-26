@@ -4,21 +4,17 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <title>React App</title>
+    <meta property="og:url" content="https://kim-joy.github.io/portfolio/">
+    <meta property="og:title" content="Joy's Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="%PUBLIC_URL%/meta.png">
+    <meta property="og:description" content="개발자로 전진하기 위한 발자취">
+    <title>Joy's Portfolio</title>
     <script>
     document.addEventListener('scroll', () => {
     const movingElement = document.querySelector('body');
     const scrollPosition = window.scrollY;
-    const newPosition = scrollPosition * 0.5; // 스크롤에 따라 X축 위치 변경 (여기서 0.5는 이동 속도 비율)
+    const newPosition = scrollPosition * 0.5;
 
     movingElement.style.transform = `translateX(${newPosition}px)`;
 });
@@ -26,7 +22,6 @@
     </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
 </html>
