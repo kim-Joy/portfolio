@@ -29,7 +29,7 @@ class ResultHight extends Component {
             저를 보여드릴 기회는 주세요.. 예?..예?🙇‍
             </pre>
             <div className="btn_bottom_group">
-              <Link to="/Resume" className="btn fill_pink">프로젝트 기여도</Link>
+              <Link to="https://kim-joy.github.io/notion/" className="btn fill_pink">프로젝트 기여도</Link>
               <Link to="/" className="btn fill_purple">자기개발 문서관리</Link>
             </div>
           </div>
