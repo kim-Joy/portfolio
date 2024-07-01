@@ -16,27 +16,23 @@ html,body {
 
 /* 레이아웃 X축  */
 .fullpage_X {
-  overflow: auto;
+  width: 100%; height: 100vh;
+  display: flex;
+  overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-}
 
-.fullpage_article {
-  height: 100vh;
-  display: flex; flex-wrap: nowrap;
 }
-.fullpage_article > article {
+.fullpage_X > article {
   position: relative;
+  width: 100%; height: 100%;
   display: grid;
   align-items: center;
   justify-items: center;
   justify-content: center;
-  width: 100vw; height: 100%;
+  flex: none;
   scroll-snap-align: start;
-  scroll-snap-stop: normal;
-  overflow: hidden;
 }
-.fullpage_article:after {content: ''; clear: both; display: block; visibility: hidden;}
 
 
 

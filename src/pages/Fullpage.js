@@ -10,35 +10,19 @@ const { Component } = require("react");
 
 class Fullpage extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      numberOfDivs: 0
-    };
-  }
-
-  componentDidMount() {
-    const numberOfDivs = document.querySelectorAll('.fullpage_article > *').length;
-    this.setState({ numberOfDivs });
-
-  }
-
   render() {
-    const { numberOfDivs } = this.state;
     return (
       <div className="fullpage">
         <Header 
           menu = {true}
         />
-        <div className="fullpage_X">
-          <div className="fullpage_article" style={{'width': `${numberOfDivs * 100}%`}}>
+          <div className="fullpage_X">
             <Intro />
             <Skill />
             <Myself />
             <Game />
             <Finish />
           </div>
-        </div>
       </div>
     );
   }
