@@ -58,7 +58,7 @@ class Intro extends Component {
         </div>
 
         <div className="gradation_bg">
-          <span className="gradation_line"></span>
+          <span classNam="gradation_line"></span>
         </div>
       </article>
     );

@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 import Fullpage from 'pages/Fullpage';
 import ResultHight from 'pages/ResultHight';
 import ResultMedium from 'pages/ResultMedium';

@@ -64,9 +64,9 @@ html,body {
 
 /* back */
 .btn_back {position: relative; }
-.btn_back > span {position: absolute; top: 50%; left: 0; width: 36px; box-sizing: border-box; border-radius: 3px; border-style: solid; border-width: 3px; border-color: var(--complementary);}
-.btn_back > span:after {content: ''; position: absolute; top: 6px; left: -4px; width: 24px; box-sizing: border-box; border-radius: 3px; border-style: solid; border-width: 3px; border-color: var(--complementary); transform: rotate(45deg); background-color: var(--complementary); }
-.btn_back > span:before {content: ''; position: absolute; bottom: 6px; left: -4px; width: 24px; box-sizing: border-box; border-radius: 3px; border-style: solid; border-width: 3px; border-color: var(--complementary); transform: rotate(-45deg); background-color: var(--complementary); }
+.btn_back .back_icon {position: absolute; top: 50%; left: 0; width: 36px; box-sizing: border-box; border-radius: 3px; border-style: solid; border-width: 3px; border-color: var(--complementary);}
+.btn_back .back_icon:after {content: ''; position: absolute; top: 6px; left: -4px; width: 24px; box-sizing: border-box; border-radius: 3px; border-style: solid; border-width: 3px; border-color: var(--complementary); transform: rotate(45deg); background-color: var(--complementary); }
+.btn_back .back_icon:before {content: ''; position: absolute; bottom: 6px; left: -4px; width: 24px; box-sizing: border-box; border-radius: 3px; border-style: solid; border-width: 3px; border-color: var(--complementary); transform: rotate(-45deg); background-color: var(--complementary); }
 
 /* dynamic_island */
 .dynamic_island {position: relative;}
@@ -80,11 +80,11 @@ html,body {
   padding: 0 15px;
   box-sizing: border-box;
   border-radius: 30px;
-  border: 2px solid rgba(255,255,255,0.08); background-color: var(--black); }
+  border: 2px solid rgba(255,255,255,0.23); background-color: var(--black); }
 
 .dynamic_island .album_art {width: 26px; height: 26px; border-radius: 5px; background-color: #2C2C2C;background-image: url("/src/assets/images/icon/psy.png"); background-repeat: no-repeat; background-size: contain; background-position: center center; overflow: hidden;}
 .dynamic_island .waveform {position: relative; width: 24px; height: 26px;}
-.dynamic_island .waveform .wave_line {position: absolute; top: 50%; width: 2px; height: 3px; border-radius: 5px; box-sizing: border-box; background-color: rgba(255,255,255,0.08); transform: translateY(-50%); }
+.dynamic_island .waveform .wave_line {position: absolute; top: 50%; width: 2px; height: 3px; border-radius: 5px; box-sizing: border-box; background-color: rgba(255,255,255,0.23); transform: translateY(-50%); }
 .dynamic_island .waveform .wave_line:nth-of-type(1) {left: 0px;}
 .dynamic_island .waveform .wave_line:nth-of-type(2) {left: 5px;}
 .dynamic_island .waveform .wave_line:nth-of-type(3) {left: 10px;}
@@ -141,8 +141,8 @@ html,body {
 
 .gnb_category li:hover .btn_category:before {content:''; position: absolute; bottom: 0; left: 0; width: calc(100% - 3.888rem); height: 30%; opacity: 0.5;}
 
-.gnb_category .category_intro .btn_category:before {background-color: var(--purple);}
+.gnb_category .category_intro .btn_category:before {background-color: var(--green);}
 .gnb_category .category_skill .btn_category:before {background-color: var(--pink);}
 .gnb_category .category_myself .btn_category:before {background-color: var(--blue);}
 .gnb_category .category_game .btn_category:before {background-color: var(--green);}
-.gnb_category .category_finish .btn_category:before {background-color: red}
+.gnb_category .category_finish .btn_category:before {background-color: var(--blue)}

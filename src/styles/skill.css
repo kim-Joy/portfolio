@@ -98,32 +98,101 @@
 
 
 .skill .bubble_group {position: absolute; top : -20px; left: 50%; max-width: 337px; width: 100%; transform: translateX(-50%);} 
-.skill .bubble {
-  display: block;
-  width: 100%; 
-  background-color: var(--pink); font-size: 1.333rem; 
-  font-family: 'LOTTERIACHAB'; font-weight: normal; 
-  color: var(--white); 
-  text-align: center; 
-  text-shadow: 0px 7px 4px rgba(0,0,0,0.25); 
-}
 .skill .bubble_group.on {  
   animation-name: pos;
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
 }
+.skill .bubble {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: var(--pink); font-size: 1.333rem; 
+  font-family: 'LOTTERIACHAB'; font-weight: normal; 
+  color: var(--white); 
+  text-align: center; 
+  text-shadow: 0px 7px 4px rgba(0,0,0,0.25); 
+}
 
-.skill .bubble_tail:after {bottom: -16px; left: 40px; transform: rotate(22deg);}
+.skill .bubble_tail:after {left: 40px;  top: -16px; transform: rotate(140deg) scaleX(-1) ;}
 
-.skill .bubble > .icon_skill {display: inline-block; width: 24px; height: 24px; margin-left: 2px; background-image: url("/src/assets/images/icon/skill.png"); background-repeat: no-repeat; background-size: contain; background-position:center center; vertical-align: sub;}
+.skill .bubble .bubble_icon_skill {
+  position: absolute;
+  display: inline-block;
+  top: 24px; right: 20px;
+  width: 24px; height: 24px;
+  background-image: url("/src/assets/images/icon/skill.png"); 
+  background-repeat: no-repeat; 
+  background-size: contain;
+  background-position: center center;
+}
+
+.cube {
+  position: relative;
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+
+  animation : spin 5s infinite linear;
+  transform-style: preserve-3d;
+}
+
+@keyframes spin {
+  from { transform: rotateY(0) rotateX(0); }
+  to   { transform: rotateY(-360deg) rotateX(360deg); }
+}
+
+.cube > div {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border: 1px solid #333;
+  font-size: 1.333rem; 
+  font-family: 'LOTTERIACHAB'; font-weight: normal;
+  color: white;
+  text-align: center;
+}
+
+.one { 
+  transform: rotateX(90deg) translateZ(200px); 
+  background-color: var(--pink);
+}
+
+.two { 
+  transform: translateZ(200px); 
+  background-color:var(--pink);
+}
+
+.three { 
+  transform: rotateY(90deg) translateZ(200px); 
+  background-color:var(--pink);
+}
+
+.four { 
+  transform: rotateY(180deg) translateZ(200px); 
+  background-color:var(--pink);
+}
+
+.five { 
+  transform: rotateY(-90deg) translateZ(200px); 
+  background-color:var(--pink);
+}
+
+.six { 
+  transform: rotateX(-90deg) translateZ(200px); 
+  background-color:var(--pink);
+}
+
 
 @keyframes pos {
   0% {
-    top: -100px
+    top: -20px;
+    opacity: 0.5;
   } 
   100% {
-    top: 100%; 
+    top: calc(100% - 74px);
+    opacity: 1;
   } 
 }
 
@@ -157,5 +226,6 @@
   .skill_item {width: 25%;}
   .skill_item .skill_icon {width: 50px; height: 50px; }
   .skill_memoji .bubble {font-size: 14px;}
+
 
 }

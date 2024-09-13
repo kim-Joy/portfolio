@@ -10,6 +10,7 @@ import music from 'assets/music/celeb.mp4';
 
 
 
+
 class Header extends Component {
 
 
@@ -93,7 +94,8 @@ class Header extends Component {
               <span></span>
           </button> : 
           <Link to="/" className="btn_back">
-            <span></span>
+            <span className="visuallyhidden">뒤로가기</span>
+            <i className="back_icon"></i>
         </ Link>  
          }
           <div className="dynamic_island">

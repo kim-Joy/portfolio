@@ -3,33 +3,45 @@ import { Link } from 'react-router-dom';
 
 import Header from 'components/Header';
 
-class ResultLow extends Component {
+import Memoji_result from 'assets/images/memoji/result_low.png';
+
+class ResultHight extends Component {
   render() {
 
     return (
-      <div className="result_details result_low">
+      <div className="result">
         <Header menu={false} />
-       <div>
-            미모지 동일
+        <section className="pos_center">
+          <div className="details_memoji">
+            <img src={Memoji_result} className="memoji" alt="미모지" />
           </div>
-          <div>
-            <div className="txt_group">
-              <h3 className="title">
-                잠시만요~~
-                아쪼구
-              </h3>
-              <p className="summary">나를 못알아봐?</p>
-            </div>
-            <div className="btn_bottom_group">
-              <Link to="/" className="btn">프로젝트 기여도</Link>
-              <Link to="/" className="btn">자기개발 문서관리</Link>
-            </div>
-          </div>
+          <div className="details_txt_group">
+            <h3 className="title">
+            404<br />
+            Not Found 💣
+            </h3>
+            <p className="summary">
+            Oops. this page doesn't exist<br />
+            The balance test again please.🙏
+            </p>
 
-        
+          <pre className="pre">카멜레온 같은 인재라고 말씀드렸던가요?
+
+            
+            아직 저의 능력을 다 보여드린게 아닌데, 이렇게 가버리시면 섭섭합니다. 
+            면접관님의 흥미를 끌기 위해 좀 더 준비해보았습니다.
+          </pre>
+          </div>
+          <div className="details_btn_group">
+            <div className="btn_bottom_group">
+              <Link to="https://github.com/kim-Joy/portfolio" className="btn fill_pink">포트폴리오 기여도</Link>
+              <Link to="https://https://github.com/kim-Joy/notefolio" className="btn fill_purple">프로젝트 산출물</Link>
+            </div>
+          </div>
+        </section>        
       </div>
     );
   }
 }
 
-export default ResultLow;
+export default ResultHight;

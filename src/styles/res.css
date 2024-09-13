@@ -21,6 +21,7 @@
 ==================================== */
 @container res-container (max-width: 1200px) {
 
+
 }
 
 
@@ -52,9 +53,12 @@
 @container res-container (max-width: 689px) {
   .header {
     --height: 60px; 
-    height: var(--hd_height); 
   }
   .header_gnb {padding-top: 5px;}
+
+  .finish .bubble_group {
+    --height: 60px; 
+  }
 
 }
 

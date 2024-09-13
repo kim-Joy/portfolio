@@ -1,15 +1,72 @@
 /* =====================================
   finish
 =======================================*/
+
 .finish .pos_center{
-  width: 100%;
-  z-index: 1;
-  display: grid; 
-  grid-template-columns: 375px 500px;
-  align-items: center;
-  align-content: space-between;
-  justify-content: center;
-  justify-items: stretch;
-  gap: 0 20px;
-  transition: 1s;
+  grid-template-columns: 350px auto 350px;
+}
+
+.finish .bubble_group {position: relative; }
+.finish .bubble {padding: 24px 40px; background-color: var(--blue); text-align: right; font-size: 1.444rem; color: var(--white); font-weight: 700;}
+
+.finish .bubble_group li {position: absolute;}
+
+
+/* bubble_group position */
+.finish .bubble_group:nth-of-type(1) li {right: 0;}
+.finish .bubble_group li:nth-child(1) {top: -150px;  }
+.finish .bubble_group li:nth-child(2) {top: 10%; }
+.finish .bubble_group li:nth-child(3) {top: 44%; }
+.finish .bubble_group li:nth-child(4) {bottom: -30px; }
+
+.finish .bubble_group:nth-of-type(2) li:nth-child(1) {top: -100px; left: 0;}
+.finish .bubble_group:nth-of-type(2) li:nth-child(2) {top: 12%; }
+.finish .bubble_group:nth-of-type(2) li:nth-child(3) {top: 60%; }
+.finish .bubble_group:nth-of-type(2) li:nth-child(4) {left: -25px; bottom: -50px; }
+
+.finish .bubble_group:nth-of-type(2) li .bubble {text-align: left;}
+
+/* bubble_tail position  */
+.finish .bubble_group:nth-of-type(1) li:nth-child(-n+3) .bubble_tail:after {bottom: 0; right: 0;}
+.finish .bubble_group:nth-of-type(1) li:nth-child(4) .bubble_tail:after {top: 0; right: 0; transform: rotate(162deg) scaleX(-1); }
+
+.finish .bubble_group:nth-of-type(2) li:nth-child(-n+2) .bubble_tail:after {bottom: 0; left: 0; transform: rotate(-30deg) scaleX(-1);}
+.finish .bubble_group:nth-of-type(2) li:nth-child(n+3) .bubble_tail:after {top: 0; left: 0; transform: rotate(216deg);}
+
+
+
+
+
+
+/* ====================================
+ container query 1200px 이상
+==================================== */
+@container res-container (max-width: 1330px) {
+
+  .finish .pos_center{
+    grid-template-columns: 280px auto 280px;
+  }
+  .finish .bubble {font-size: 1rem; }
+}
+
+
+
+
+/* ====================================
+ container query ~1200px
+==================================== */
+@container res-container (max-width: 1200px) {
+  
+  
+}
+
+/* ====================================
+ container query ~780px
+==================================== */
+@container res-container (max-width: 780px) {
+  .finish .pos_center{
+    grid-template-columns: 190px 200px 190px; 
+  }
+  .finish .bubble {padding: 12px 20px; }
+  .finish .bubble_tail:after {width: 20px; height: 10px; }
 }

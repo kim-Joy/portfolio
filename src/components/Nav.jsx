@@ -1,4 +1,5 @@
 
+import React from 'react';
 
 const { Component } = require("react");
 
@@ -9,7 +10,6 @@ const nav_catrgory = [
   {key: "4", class: "game",title: "Balance game", to: '/Game'},
   {key: "5", class: "finish",title: "Good bye", to: '/Finish'}
 ]
-
 
 const scrollToSection = (id) => {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
@@ -51,8 +51,10 @@ class Nav extends Component {
         const id = entry.target.id;
         if (id === 'intro') {
           name_tag_animation.classList.add('on');
+          skill_bubble.classList.remove('on');
         } else if (id === 'skill') {
           skill_bubble.classList.add('on');
+          name_tag_animation.classList.remove('on');
         } else {
           name_tag_animation.classList.remove('on');
           skill_bubble.classList.remove('on');

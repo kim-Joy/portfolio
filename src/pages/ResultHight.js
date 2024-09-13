@@ -3,37 +3,41 @@ import { Link } from 'react-router-dom';
 
 import Header from 'components/Header';
 
+import Memoji_result from 'assets/images/memoji/result_hight.png';
+
 class ResultHight extends Component {
   render() {
 
     return (
-      <div className="result result_height">
+      <div className="result ">
         <Header menu={false} />
-        <section className="result_details">
-          <div className="">
-              미모지 동일
+        <section className="pos_center">
+          <div className="details_memoji">
+            <img src={Memoji_result} className="memoji" alt="미모지" />
           </div>
-          <div className="txt_group">
+          <div className="details_txt_group">
             <h3 className="title">
-              잠시만요<br />
-              조희언니 티어스 닦고 가실게요
+            404<br />
+            Not Found 💣
             </h3>
             <p className="summary">
-              면접관님은 상위 1%인재를 찾고계시군요.
+            Oops. this page doesn't exist<br />
+            The balance test again please.🙏
             </p>
-            <pre className="pre">
-            하지만, 간과한게 있으시군요.
-            저의 능력을 다 보여 드린게 아니라는 점. 벌써부터 판단하기에 이른 것 같군요.
 
+          <pre className="pre">카멜레온 같은 인재라고 말씀드렸던가요?
 
-            저를 보여드릴 기회는 주세요.. 예?..예?🙇‍
-            </pre>
+            
+            아직 저의 능력을 다 보여드린게 아닌데, 이렇게 가버리시면 섭섭합니다. 
+            면접관님의 흥미를 끌기 위해 좀 더 준비해보았습니다.
+          </pre>
+          </div>
+          <div className="details_btn_group">
             <div className="btn_bottom_group">
-              <Link to="https://kim-joy.github.io/notion/" className="btn fill_pink">프로젝트 기여도</Link>
-              <Link to="/" className="btn fill_purple">자기개발 문서관리</Link>
+              <Link to="https://github.com/kim-Joy/portfolio" className="btn fill_pink">포트폴리오 기여도</Link>
+              <Link to="https://https://github.com/kim-Joy/notefolio" className="btn fill_purple">프로젝트 산출물</Link>
             </div>
           </div>
-          
         </section>        
       </div>
     );

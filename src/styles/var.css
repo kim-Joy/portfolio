@@ -12,11 +12,12 @@
   --purple: #9D50F5;
   --pink : #FF3BA1;
 
+  --height: 80px;
+
 
 }
 
 .header {
-  --height: 80px;
   --hd_height : var(--height);
 }
 
