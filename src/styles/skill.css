@@ -97,7 +97,14 @@
 
 
 
-.skill .bubble_group {position: absolute; top : -20px; left: 50%; max-width: 337px; width: 100%; transform: translateX(-50%);} 
+.skill .bubble_group {
+  position: absolute; 
+  top : -20px; left: 50%; 
+  z-index: 1;
+  max-width: 337px; 
+  width: 100%; 
+  transform: translateX(-50%);
+} 
 .skill .bubble_group.on {  
   animation-name: pos;
   animation-duration: 3s;
@@ -196,6 +203,17 @@
   } 
 }
 
+@keyframes pos_res {
+  0% {
+    top: -20px;
+    opacity: 0.5;
+  } 
+  100% {
+    top: calc(100% + 40px);
+    opacity: 1;
+  } 
+}
+
 .skill_memoji {width: 100%; height: 100%;}
 .skill_memoji .memoji {display: block; max-width: 100%;}
 
@@ -216,6 +234,8 @@
  container query ~482px
 ==================================== */
 @container res-container (max-width: 482px) {
+  
+
   .skill .pos_center {
     grid-template-columns: auto;
     grid-template-rows: 80px auto 80px;
@@ -226,6 +246,8 @@
   .skill_item {width: 25%;}
   .skill_item .skill_icon {width: 50px; height: 50px; }
   .skill_memoji .bubble {font-size: 14px;}
+
+  .skill .bubble_group.on {animation-name: pos_res;}
 
 
 }

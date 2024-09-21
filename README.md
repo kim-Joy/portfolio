@@ -20,8 +20,8 @@ View URL : https://kim-joy.github.io/portfolio/
 ### Skill
 웹퍼블리셔가 갖춰야할 기본적인 언어 스킬과 UIUX Tool을 활용했던 스킬을 보여주는 페이지 입니다.
 
-Langane : HTML5, CSS3, JavaScript, Jquery, React  ...
-UIUX Tool : Photo Shop, Illustratorst, Figma, Adboe XD, Zeplin ...
+Langane : HTML5, CSS3, JavaScript, Jquery, React
+UIUX Tool : Photo Shop, Illustratorst, Figma, Adboe XD, Zeplin
 
 ### MySelf
 앞에서는 내가 나를 표현했다면 마이셀프 페이지에서는 "회사에서 타인이 보는 나는?" 이라는 주제로 이전 직장에서 나를 부르는 별명과 그의 설명을 간략하게 적어보았습니다.
