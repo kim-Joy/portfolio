@@ -19,23 +19,6 @@
 
     movingElement.style.transform = `translateX(${newPosition}px)`;
     });
-
-
-    //주소창 색상 변경을 위한 메타태그 컨트롤롤
-    const themeMeta = document.querySelector('meta[name="theme-color"]');
-
-    const setThemeColor = () => {
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        themeMeta.setAttribute('content', '#101010'); 
-      } else {
-        themeMeta.setAttribute('content', '#FFFFFF'); 
-      }
-    };
-    setThemeColor();
-
-    // 모드 변경 감지
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setThemeColor);
-
     </script>
   </head>
   <body>

@@ -38,18 +38,31 @@ class Header extends Component {
   SystemMode = () => { 
     const BTN_MODE = document.querySelector('.btn_mode');
     const APP = document.querySelector('.App');
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    
+    const setThemeColor = () => {
+      if (BTN_MODE.classList.contains('on')) {
+        themeMeta.setAttribute('content', '#FFFFFF');
+      } else {
+        themeMeta.setAttribute('content', '#101010'); 
+      }
+    };
 
     if (BTN_MODE.classList.contains('on')) {
       BTN_MODE.classList.remove('on');
       APP.classList.remove('mode-Light');
       APP.classList.add('mode-Dark');
-  } else {
+    } else {
       BTN_MODE.classList.add('on');
       APP.classList.remove('mode-Dark');
       APP.classList.add('mode-Light');
+    }
+
+    setThemeColor();
   }
-    
-  }
+
+
+
 
   player = () => { 
     const audio = document.querySelector('#audio');
