@@ -5,9 +5,10 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:url" content="https://kim-joy.github.io/portfolio/">
-    <meta property="og:title" content="Joy's Portfolio">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="%PUBLIC_URL%/meta.png">
+    <meta property="og:title" content="Joy's Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="%PUBLIC_URL%/meta.png" />
+    <meta name="theme-color" content="#101010" />
     <meta property="og:description" content="웹퍼블리셔에서 프론트엔트로 전진하기 위한 발자취👣">
     <title>Joy's Portfolio</title>
     <script>
@@ -17,11 +18,28 @@
     const newPosition = scrollPosition * 0.5;
 
     movingElement.style.transform = `translateX(${newPosition}px)`;
-});
+    });
+
+
+    //주소창 색상 변경을 위한 메타태그 컨트롤롤
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+    const setThemeColor = () => {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        themeMeta.setAttribute('content', '#101010'); 
+      } else {
+        themeMeta.setAttribute('content', '#FFFFFF'); 
+      }
+    };
+    setThemeColor();
+
+    // 모드 변경 감지
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setThemeColor);
 
     </script>
   </head>
   <body>
     <div id="root"></div>
   </body>
+
 </html>
