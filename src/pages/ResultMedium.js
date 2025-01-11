@@ -35,7 +35,7 @@ class ResultHight extends Component {
           <div className="details_btn_group">
             <div className="btn_bottom_group">
               <Link to="https://kim-joy.github.io/notefolio/" className="btn fill_pink">프로젝트 기여도</Link>
-              <Link to="/" className="btn fill_purple">자기개발 문서관리</Link>
+              <Link to="https://kim-joy.github.io/notefolio/" className="btn fill_purple">프로젝트 산출물</Link>
             </div>
           </div>
         </section>        
