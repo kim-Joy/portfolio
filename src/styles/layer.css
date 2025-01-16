@@ -115,6 +115,7 @@ html,body {
 }
 
 .btn_test {
+  display: none;
   background-color: var(--complementary); 
   background-repeat: no-repeat; 
   background-size: contain; 

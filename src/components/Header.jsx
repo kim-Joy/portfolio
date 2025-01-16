@@ -124,6 +124,9 @@ class Header extends Component {
           <button type="button" className="btn_mode" onClick={this.SystemMode}>
             <span className="visuallyhidden">mode system</span>
           </button>
+          <button type="button" className="btn_test" >
+            <span className="visuallyhidden">mode system</span>
+          </button>
         </header>
         <Nav />
       </div>
