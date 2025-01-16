@@ -114,6 +114,21 @@ html,body {
   mask-image: url("/src/assets/images/icon/moon.svg"); 
 }
 
+.btn_test {
+  background-color: var(--complementary); 
+  background-repeat: no-repeat; 
+  background-size: contain; 
+  background-position: center center; 
+  -webkit-mask-image: url("/src/assets/images/icon/sun.png"); 
+  mask-image: url("/src/assets/images/icon/sun.png"); -webkit-mask-repeat: no-repeat; 
+  mask-repeat: no-repeat; 
+  -webkit-mask-position: center center; 
+  mask-position: right center; 
+  -webkit-mask-size: contain; 
+  mask-size: contain;
+  aspect-ratio: 1/1;
+}
+
 
 
 
